@@ -368,3 +368,172 @@ Information for cause: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' 
   
 app/views/home/index.html.erb:10
 [rails_node_module_linker] Middleware inserted
+Started GET "/users/sign_in" for ::1 at 2025-11-12 20:20:00 +0100
+Started GET "/users/sign_up" for ::1 at 2025-11-12 20:20:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (9.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+DEPRECATION WARNING: resource received a hash argument only. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path_names. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument controller. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 29.5ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'tailwind.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'tailwind.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'tailwind.css' was not found in the load path.):
+    27: 
+    28:     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    29:     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    30:     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    31:     <%= javascript_importmap_tags %>
+    32:     <%= render "layouts/dark_mode_check" %>
+    33:   </head>
+  
+app/views/layouts/application.html.erb:30
+
+Information for cause: Propshaft::MissingAssetError (The asset 'tailwind.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:30
+Started GET "/favicon.ico" for ::1 at 2025-11-12 20:20:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2025-11-12 20:20:17 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset 'svjetlost1.svg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'svjetlost1.svg' was not found in the load path.):
+     7:     <br>
+     8:     <div data-controller="dark-mode">
+     9:       <%= image_tag("svjetlost1.svg",
+    10:       data: { action: 'click->dark-mode#toggle'}) %>
+    11:     </div>
+    12:     <br>
+    13:     <h3 class="1font-bold text-3xl
+  
+app/views/home/index.html.erb:10
+
+Information for cause: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' was not found in the load path.):
+  
+app/views/home/index.html.erb:10
+Started GET "/" for ::1 at 2025-11-12 20:20:17 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'svjetlost1.svg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'svjetlost1.svg' was not found in the load path.):
+     7:     <br>
+     8:     <div data-controller="dark-mode">
+     9:       <%= image_tag("svjetlost1.svg",
+    10:       data: { action: 'click->dark-mode#toggle'}) %>
+    11:     </div>
+    12:     <br>
+    13:     <h3 class="1font-bold text-3xl
+  
+app/views/home/index.html.erb:10
+
+Information for cause: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' was not found in the load path.):
+  
+app/views/home/index.html.erb:10
+Started GET "/arts/" for ::1 at 2025-11-12 20:20:34 +0100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (5.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (1.6ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (4.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (2.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 99.4ms | GC: 3.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 100.1ms | GC: 3.8ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 20.3ms (9 queries, 0 cached) | GC: 4.3ms)
+
+
+  
+ActionView::Template::Error (The asset 'tailwind.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'tailwind.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'tailwind.css' was not found in the load path.):
+    27: 
+    28:     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    29:     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    30:     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    31:     <%= javascript_importmap_tags %>
+    32:     <%= render "layouts/dark_mode_check" %>
+    33:   </head>
+  
+app/views/layouts/application.html.erb:30
+app/controllers/arts_controller.rb:15:in 'ArtsController#index'
+
+Information for cause: Propshaft::MissingAssetError (The asset 'tailwind.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:30
+app/controllers/arts_controller.rb:15:in 'ArtsController#index'
+Started GET "/" for ::1 at 2025-11-12 20:20:49 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'svjetlost1.svg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'svjetlost1.svg' was not found in the load path.):
+     7:     <br>
+     8:     <div data-controller="dark-mode">
+     9:       <%= image_tag("svjetlost1.svg",
+    10:       data: { action: 'click->dark-mode#toggle'}) %>
+    11:     </div>
+    12:     <br>
+    13:     <h3 class="1font-bold text-3xl
+  
+app/views/home/index.html.erb:10
+
+Information for cause: Propshaft::MissingAssetError (The asset 'svjetlost1.svg' was not found in the load path.):
+  
+app/views/home/index.html.erb:10
