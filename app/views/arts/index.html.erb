@@ -63,15 +63,16 @@
             padding-bottom:20px; padding-left:0">
             <td class="vertical-menu">
               <ul class="1vertical-menu">
-            <% art.lists.each do |list| %>
+            <% art.lists.order('created_at DESC').each do |list| %>
               <li class="vertical-menu">
                 <a href="/lists/<%= list.id %>",
+                style="margin-left:0.6em; margin-righr:1.2em",
                 class="nav-link">
                 <%= truncate(strip_tags(list.title.to_s),
                 length:50) %></a>
               </li>
             <% end %>
-            <br />
+            <br>
               </ul>
             </td>
             <td style="width:7px; heigh:auto"></td>

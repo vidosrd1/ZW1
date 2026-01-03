@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    action_text-trix (2.1.15)
+    action_text-trix (2.1.16)
       railties
     actioncable (8.1.1)
       actionpack (= 8.1.1)
@@ -75,8 +75,8 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.8.8)
+      public_suffix (>= 2.0.2, < 8.0)
     ansi (1.5.0)
     appraisal (2.5.0)
       bundler
@@ -84,14 +84,14 @@ GEM
       thor (>= 0.14.0)
     ast (2.4.3)
     base64 (0.3.0)
-    bcrypt (3.1.20)
-    bcrypt_pbkdf (1.1.1)
+    bcrypt (3.1.21)
+    bcrypt_pbkdf (1.1.2)
     benchmark-ips (2.14.0)
-    bigdecimal (3.3.1)
+    bigdecimal (4.0.1)
     bindex (0.8.1)
-    bootsnap (1.18.6)
+    bootsnap (1.20.1)
       msgpack (~> 1.2)
-    brakeman (7.1.1)
+    brakeman (7.1.2)
       racc
     builder (3.3.0)
     capybara (3.40.0)
@@ -107,13 +107,13 @@ GEM
       json
       simplecov
     coderay (1.1.3)
-    concurrent-ruby (1.3.5)
-    connection_pool (2.5.4)
+    concurrent-ruby (1.3.6)
+    connection_pool (3.0.2)
     crass (1.0.6)
     cssbundling-rails (1.4.3)
       railties (>= 6.0.0)
-    date (3.5.0)
-    debug (1.11.0)
+    date (3.5.1)
+    debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
     devise (4.9.4)
@@ -123,16 +123,16 @@ GEM
       responders
       warden (~> 1.2.3)
     docile (1.4.1)
-    dotenv (3.1.8)
+    dotenv (3.2.0)
     drb (2.2.3)
     ed25519 (1.4.0)
-    erb (5.1.3)
+    erb (6.0.1)
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
     ffaker (2.25.0)
-    ffi (1.17.2-arm64-darwin)
-    friendly_id (5.5.1)
+    ffi (1.17.3-arm64-darwin)
+    friendly_id (5.6.0)
       activerecord (>= 4.0.0)
     fugit (1.12.1)
       et-orbi (~> 1.4)
@@ -141,7 +141,7 @@ GEM
       activesupport (>= 6.1)
     httpclient (2.9.0)
       mutex_m
-    i18n (1.14.7)
+    i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     image_processing (1.14.0)
       mini_magick (>= 4.9.5, < 6)
@@ -150,19 +150,19 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
-    io-console (0.8.1)
-    irb (1.15.3)
+    io-console (0.8.2)
+    irb (1.16.0)
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.14.1)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
-    json (2.16.0)
+    json (2.18.0)
     kalibera (0.1.2)
       memoist (~> 0.16)
       rbzip2 (~> 0.3)
-    kamal (2.8.2)
+    kamal (2.10.1)
       activesupport (>= 7.0)
       base64 (~> 0.2)
       bcrypt_pbkdf (~> 1.0)
@@ -179,14 +179,16 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
-    loofah (2.24.1)
+    loofah (2.25.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    madmin (2.1.3)
+    madmin (2.3.2)
       importmap-rails
       pagy (>= 3.5)
       propshaft
       rails (>= 7.0.0)
+      stimulus-rails
+      turbo-rails
     mail (2.9.0)
       logger
       mini_mime (>= 0.1.1)
@@ -201,20 +203,20 @@ GEM
     mini_magick (5.3.1)
       logger
     mini_mime (1.1.5)
-    minitest (5.26.1)
+    minitest (5.27.0)
     minitest-reporters (1.7.1)
       ansi
       builder
       minitest (>= 5.0)
       ruby-progressbar
     msgpack (1.8.0)
-    multi_json (1.17.0)
+    multi_json (1.19.1)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
     mutex_m (0.3.0)
     name_of_person (1.1.3)
       activesupport (>= 5.2.0)
-    net-imap (0.5.12)
+    net-imap (0.6.2)
       date
       net-protocol
     net-pop (0.1.2)
@@ -229,9 +231,9 @@ GEM
       net-protocol
     net-ssh (7.3.0)
     nio4r (2.7.5)
-    nokogiri (1.18.10-arm64-darwin)
+    nokogiri (1.19.0-arm64-darwin)
       racc (~> 1.4)
-    oj (3.16.12)
+    oj (3.16.13)
       bigdecimal (>= 3.0)
       ostruct (>= 0.2)
     orm_adapter (0.5.0)
@@ -244,24 +246,25 @@ GEM
     parser (3.3.10.0)
       ast (~> 2.4.1)
       racc
-    pg (1.6.2-arm64-darwin)
+    pg (1.6.3-arm64-darwin)
     power_assert (3.0.1)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
-    prism (1.6.0)
+    prism (1.7.0)
     propshaft (1.3.1)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
       rack
-    pry (0.15.2)
+    pry (0.16.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
+      reline (>= 0.6.0)
     pstore (0.2.0)
-    psych (5.2.6)
+    psych (5.3.1)
       date
       stringio
-    public_suffix (6.0.2)
+    public_suffix (7.0.0)
     puma (6.6.1)
       nio4r (~> 2.0)
     pusher (2.0.3)
@@ -281,7 +284,7 @@ GEM
       rack (>= 3.0.0)
     rack-test (2.2.0)
       rack (>= 1.3)
-    rackup (2.2.1)
+    rackup (2.3.1)
       rack (>= 3)
     rails (8.1.1)
       actioncable (= 8.1.1)
@@ -304,7 +307,7 @@ GEM
     rails-html-sanitizer (1.6.2)
       loofah (~> 2.21)
       nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
-    rails_node_module_linker (0.1.1)
+    rails_node_module_linker (0.2.1)
     railties (8.1.1)
       actionpack (= 8.1.1)
       activesupport (= 8.1.1)
@@ -321,14 +324,14 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rbzip2 (0.3.0)
-    rdoc (6.15.1)
+    rdoc (7.0.3)
       erb
       psych (>= 4.0.0)
       tsort
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
-    rematch (3.2.0)
+    rematch (5.0.2)
       logger
       pstore
     request_store (1.7.0)
@@ -338,7 +341,7 @@ GEM
     responders (3.2.0)
       actionpack (>= 7.0)
       railties (>= 7.0)
-    rubocop (1.80.2)
+    rubocop (1.81.7)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -346,12 +349,12 @@ GEM
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 2.9.3, < 3.0)
-      rubocop-ast (>= 1.46.0, < 2.0)
+      rubocop-ast (>= 1.47.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.48.0)
+    rubocop-ast (1.49.0)
       parser (>= 3.3.7.2)
-      prism (~> 1.4)
+      prism (~> 1.7)
     rubocop-minitest (0.38.2)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
@@ -359,11 +362,11 @@ GEM
     rubocop-packaging (0.6.0)
       lint_roller (~> 1.1.0)
       rubocop (>= 1.72.1, < 2.0)
-    rubocop-performance (1.25.0)
+    rubocop-performance (1.26.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
-      rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails (2.33.4)
+      rubocop-ast (>= 1.47.1, < 2.0)
+    rubocop-rails (2.34.3)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
@@ -377,7 +380,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1)
     ruby-progressbar (1.13.0)
-    ruby-vips (2.2.5)
+    ruby-vips (2.3.0)
       ffi (~> 1.12)
       logger
     ruby2_keywords (0.0.5)
@@ -417,41 +420,41 @@ GEM
       fugit (~> 1.11)
       railties (>= 7.1)
       thor (>= 1.3.1)
-    sshkit (1.24.0)
+    sshkit (1.25.0)
       base64
       logger
       net-scp (>= 1.1.2)
       net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
       ostruct
-    standard (1.51.1)
+    standard (1.52.0)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
-      rubocop (~> 1.80.2)
+      rubocop (~> 1.81.7)
       standard-custom (~> 1.0.0)
       standard-performance (~> 1.8)
     standard-custom (1.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.50)
-    standard-performance (1.8.0)
+    standard-performance (1.9.0)
       lint_roller (~> 1.1)
-      rubocop-performance (~> 1.25.0)
+      rubocop-performance (~> 1.26.0)
     standardrb (1.0.1)
       standard
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
-    stringio (3.1.8)
+    stringio (3.2.0)
     tailwindcss-rails (4.4.0)
       railties (>= 7.0.0)
       tailwindcss-ruby (~> 4.0)
-    tailwindcss-ruby (4.1.16-arm64-darwin)
-    test-unit (3.7.1)
+    tailwindcss-ruby (4.1.18-arm64-darwin)
+    test-unit (3.7.7)
       power_assert
     thor (1.4.0)
-    thruster (0.1.16-arm64-darwin)
+    thruster (0.1.17-arm64-darwin)
     tilt (2.6.1)
     timecop (0.9.10)
-    timeout (0.4.4)
+    timeout (0.6.0)
     tsort (0.2.0)
     turbo-rails (2.0.20)
       actionpack (>= 7.1.0)
@@ -460,7 +463,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-emoji (4.2.0)
     uri (1.1.1)
     useragent (0.16.11)
     warden (1.2.9)
@@ -476,8 +479,8 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    yard (0.9.37)
-    zeitwerk (2.7.3)
+    yard (0.9.38)
+    zeitwerk (2.7.4)
 
 PLATFORMS
   arm64-darwin
@@ -502,7 +505,7 @@ DEPENDENCIES
   jbuilder
   kalibera
   kamal
-  madmin (~> 2.0, >= 2.0.2)
+  madmin (~> 2.3, >= 2.3.2)
   memory_profiler
   minitest (~> 5.25, >= 5.25.5)
   minitest-reporters (~> 1.7, >= 1.7.1)
@@ -512,14 +515,14 @@ DEPENDENCIES
   paper_trail
   pg
   propshaft
-  pry (~> 0.15.2)
+  pry (~> 0.16.0)
   puma (~> 6.6)
   pusher (~> 2.0, >= 2.0.3)
-  rack (~> 3.1, >= 3.1.14)
+  rack (~> 3.2, >= 3.2.4)
   rack-session (~> 2.1, >= 2.1.1)
-  rails (~> 8.0, >= 8.0.2)
-  rails_node_module_linker (~> 0.1.1)
-  rake (~> 13.2, >= 13.2.1)
+  rails (~> 8.1, >= 8.1.1)
+  rails_node_module_linker (~> 0.2.1)
+  rake (~> 13.3, >= 13.3.1)
   rake-manifest
   rematch
   rerun
@@ -530,22 +533,22 @@ DEPENDENCIES
   rubocop-rails-omakase
   rubocop-rake
   simplecov
-  sinatra (~> 4.1, >= 4.1.1)
-  sinatra-contrib (~> 4.1, >= 4.1.1)
+  sinatra (~> 4.2, >= 4.2.1)
+  sinatra-contrib (~> 4.2, >= 4.2.1)
   solid_cable
   solid_cache
-  solid_queue (~> 1.1, >= 1.1.5)
-  standard (~> 1.49)
+  solid_queue (~> 1.2, >= 1.2.4)
+  standard (~> 1.52)
   standardrb
   stimulus-rails
-  tailwindcss-rails (~> 4.2)
-  test-unit (~> 3.6, >= 3.6.8)
+  tailwindcss-rails (~> 4.4)
+  test-unit (~> 3.7, >= 3.7.7)
   thruster
   timecop (~> 0.9.10)
   turbo-rails
   tzinfo-data
   web-console
-  yard (~> 0.9.37)
+  yard (~> 0.9.38)
 
 BUNDLED WITH
    2.6.3

@@ -1,3 +1,11 @@
+<% art.lists.each do |list| %>
+  <li class="vertical-menu">
+    <a href="/lists/<%= list.id %>",
+    class="nav-link">
+    <%= truncate(strip_tags(list.title.to_s),
+    length:50) %></a>
+  </li>
+<% end %>
 <div class="w-full">
 _bootstrap
   <% if notice.present? %>
