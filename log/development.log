@@ -2160,3 +2160,271 @@ Processing by ListsController#show as HTML
 Completed 200 OK in 38ms (Views: 29.6ms | ActiveRecord: 2.6ms (6 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for ::1 at 2026-01-03 13:09:26 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (968.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1005.8ms | GC: 0.0ms)
+Completed 200 OK in 1020ms (Views: -229.8ms | ActiveRecord: 1238.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-01-03 14:44:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+DEPRECATION WARNING: resource received a hash argument only. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path_names. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument controller. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /opt/homebrew/lib/ruby/gems/4.0.0/gems/railties-8.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/railties-8.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-03 15:27:53 +0100
+DEPRECATION WARNING: resource received a hash argument only. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path_names. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument controller. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.8ms | GC: 1.3ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 105.7ms | GC: 2.1ms)
+Completed 200 OK in 115ms (Views: 40.9ms | ActiveRecord: 67.9ms (1 query, 0 cached) | GC: 2.7ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-01-03 15:27:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/" for ::1 at 2026-01-03 15:31:40 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | GC: 3.2ms)
+Completed 200 OK in 55ms (Views: 34.0ms | ActiveRecord: 12.6ms (1 query, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/" for ::1 at 2026-01-03 15:44:34 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Load (51.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | GC: 0.0ms)
+Completed 200 OK in 81ms (Views: -0.8ms | ActiveRecord: 77.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-04 09:46:19 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (79.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 126.4ms | GC: 0.0ms)
+Completed 200 OK in 143ms (Views: 15.5ms | ActiveRecord: 114.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-04 14:28:39 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  [1m[36mUser Load (69.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 115.3ms | GC: 0.0ms)
+Completed 200 OK in 126ms (Views: 26.7ms | ActiveRecord: 91.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-04 14:56:38 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (146.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 187.9ms | GC: 0.0ms)
+Completed 200 OK in 195ms (Views: -24.4ms | ActiveRecord: 215.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-04 15:37:28 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (45.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | GC: 0.0ms)
+Completed 200 OK in 82ms (Views: 9.6ms | ActiveRecord: 68.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 09:20:40 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (234.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 253.8ms | GC: 0.0ms)
+Completed 200 OK in 260ms (Views: -28.4ms | ActiveRecord: 284.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 09:34:50 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (52.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 501.3ms | GC: 57.0ms)
+Completed 200 OK in 519ms (Views: 436.3ms | ActiveRecord: 76.1ms (1 query, 0 cached) | GC: 57.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 10:25:56 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (41.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | GC: 0.6ms)
+Completed 200 OK in 75ms (Views: 14.3ms | ActiveRecord: 55.8ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 14:01:26 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (47.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | GC: 1.3ms)
+Completed 200 OK in 81ms (Views: 11.8ms | ActiveRecord: 65.2ms (1 query, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 14:29:07 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (43.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | GC: 1.6ms)
+Completed 200 OK in 76ms (Views: 5.0ms | ActiveRecord: 65.9ms (1 query, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 14:36:22 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (52.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 109.0ms | GC: 5.5ms)
+Completed 200 OK in 118ms (Views: 30.1ms | ActiveRecord: 80.2ms (1 query, 0 cached) | GC: 5.5ms)
+
+
+Started GET "/" for ::1 at 2026-01-05 17:24:38 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (57.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 79.8ms | GC: 0.0ms)
+Completed 200 OK in 88ms (Views: -3.4ms | ActiveRecord: 85.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-06 14:47:20 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Load (54.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 108.7ms | GC: 0.0ms)
+Completed 200 OK in 124ms (Views: 35.0ms | ActiveRecord: 78.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-06 15:12:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (58.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 86.7ms | GC: 0.0ms)
+Completed 200 OK in 92ms (Views: 0.8ms | ActiveRecord: 88.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-06 15:34:01 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mUser Load (42.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | GC: 0.0ms)
+Completed 200 OK in 92ms (Views: 14.6ms | ActiveRecord: 61.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-01-07 10:32:35 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mUser Load (55.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 108.8ms | GC: 0.0ms)
+Completed 200 OK in 119ms (Views: 34.0ms | ActiveRecord: 79.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
