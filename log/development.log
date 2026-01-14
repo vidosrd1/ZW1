@@ -2428,3 +2428,937 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 119ms (Views: 34.0ms | ActiveRecord: 79.9ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-01-14 17:29:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+DEPRECATION WARNING: resource received a hash argument only. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument path_names. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+DEPRECATION WARNING: resource received a hash argument controller. Please use a keyword instead. Support to hash argument will be removed in Rails 8.2. (called from block in <main> at /Users/vidosrd/Documents/GitHub/ZW1/config/routes.rb:5)
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.6ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 122.4ms | GC: 23.0ms)
+Completed 200 OK in 162ms (Views: 86.0ms | ActiveRecord: 43.2ms (1 query, 0 cached) | GC: 23.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-01-14 17:29:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/arts" for ::1 at 2026-01-14 17:29:59 +0100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:10
+  [1m[36mArt Load (2.2ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (6.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (4.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 190.9ms | GC: 30.8ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 194.2ms | GC: 31.4ms)
+Completed 200 OK in 213ms (Views: 161.6ms | ActiveRecord: 39.8ms (10 queries, 0 cached) | GC: 31.4ms)
+
+
+Started GET "/arts" for ::1 at 2026-01-14 17:29:59 +0100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:10
+  [1m[36mArt Load (0.4ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (2.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 70.4ms | GC: 19.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | GC: 19.0ms)
+Completed 200 OK in 78ms (Views: 66.6ms | ActiveRecord: 7.0ms (10 queries, 0 cached) | GC: 21.2ms)
+
+
+Started GET "/lists/325" for ::1 at 2026-01-14 17:30:01 +0100
+Processing by ListsController#show as HTML
+  Parameters: {"id" => "325"}
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = 325 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:72:in 'ListsController#set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:8
+  [1m[36mArt Load (0.4ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (2.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 325 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:39
+  [1m[36mActiveStorage::Blob Load (15.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:40
+  [1m[36mActionText::RichText Load (3.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 325 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:47
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 5.5ms | GC: 0.6ms)
+  Rendered lists/show.html.erb within layouts/application (Duration: 179.5ms | GC: 4.2ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 181.0ms | GC: 4.2ms)
+Completed 200 OK in 192ms (Views: 140.9ms | ActiveRecord: 42.0ms (6 queries, 0 cached) | GC: 4.2ms)
+
+
+Started GET "/lists" for ::1 at 2026-01-14 17:30:03 +0100
+Processing by ListsController#index as HTML
+  [1m[36mList Count (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "lists" /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:7:in 'ListsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:39
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 326 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 349 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mArt Load (0.4ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 326 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 3.4ms | GC: 0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 325 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.6ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 325 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.9ms | GC: 0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 324 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 347 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 324 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 323 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 346 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 323 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.9ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 322 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 345 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (1.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 322 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.5ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 321 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 344 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.6ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 321 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.1ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 320 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 343 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 320 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 3.9ms | GC: 2.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:72
+  Rendered lists/index.html.erb within layouts/application (Duration: 173.0ms | GC: 32.9ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 177.5ms | GC: 32.9ms)
+Completed 200 OK in 188ms (Views: 169.9ms | ActiveRecord: 11.2ms (31 queries, 6 cached) | GC: 32.9ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQ5LCJwdXIiOiJibG9iX2lkIn19--0585c711afcbf7629a140064ea1c56ab98fe3ad3/roy-lichtenstein-as-i-opened-fire-1964-4.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQ4LCJwdXIiOiJibG9iX2lkIn19--a960bb7164564b599de6f1e7336f547f2b472d8f/andy-warhol-campbells-soup-cans-1962.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQ3LCJwdXIiOiJibG9iX2lkIn19--e5eabdaf2a28ed9c20418b319bfabe114e64ca7f/Peter%20Blake,%20On%20the%20Balcony,%201957.jpeg" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQ5LCJwdXIiOiJibG9iX2lkIn19--0585c711afcbf7629a140064ea1c56ab98fe3ad3", "filename" => "roy-lichtenstein-as-i-opened-fire-1964-4"}
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQ4LCJwdXIiOiJibG9iX2lkIn19--a960bb7164564b599de6f1e7336f547f2b472d8f", "filename" => "andy-warhol-campbells-soup-cans-1962"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQ3LCJwdXIiOiJibG9iX2lkIn19--e5eabdaf2a28ed9c20418b319bfabe114e64ca7f", "filename" => "Peter Blake, On the Balcony, 1957"}
+  [1m[36mActiveStorage::Blob Load (7.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 349 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (1.1ms) [0m[34mGenerated URL for file at key: zp3sb80a4bgbhftgxp3pnjd58yxe (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6cDNzYjgwYTRiZ2JoZnRneHAzcG5qZDU4eXhlIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MDQuMzI3WiIsInB1ciI6ImJsb2Jfa2V5In19--282e5ddb0a1e7666f2a4a0809e511e5ddfbc4444/roy-lichtenstein-as-i-opened-fire-1964-4.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6cDNzYjgwYTRiZ2JoZnRneHAzcG5qZDU4eXhlIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MDQuMzI3WiIsInB1ciI6ImJsb2Jfa2V5In19--282e5ddb0a1e7666f2a4a0809e511e5ddfbc4444/roy-lichtenstein-as-i-opened-fire-1964-4.webp
+Completed 302 Found in 27ms (ActiveRecord: 7.5ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQ2LCJwdXIiOiJibG9iX2lkIn19--165e7503e22ddfb11cc3a6da387a2aaf9fff0a6b/roy-lichtenstein-whaam-1963-postmodern-art-1.webp" for ::1 at 2026-01-14 17:30:04 +0100
+  [1m[36mActiveStorage::Blob Load (5.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 347 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: 0nx9vlvfof0wfln0wx8dor65fxa6 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwbng5dmx2Zm9mMHdmbG4wd3g4ZG9yNjVmeGE2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUGV0ZXIgQmxha2UlMkMgT24gdGhlIEJhbGNvbnklMkMgMTk1Ny5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUGV0ZXIlMjBCbGFrZSUyQyUyME9uJTIwdGhlJTIwQmFsY29ueSUyQyUyMDE5NTcuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjA0LjM0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--be175f9517d38e74521a0b78184046172e36597e/Peter%20Blake,%20On%20the%20Balcony,%201957.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwbng5dmx2Zm9mMHdmbG4wd3g4ZG9yNjVmeGE2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUGV0ZXIgQmxha2UlMkMgT24gdGhlIEJhbGNvbnklMkMgMTk1Ny5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUGV0ZXIlMjBCbGFrZSUyQyUyME9uJTIwdGhlJTIwQmFsY29ueSUyQyUyMDE5NTcuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjA0LjM0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--be175f9517d38e74521a0b78184046172e36597e/Peter%20Blake,%20On%20the%20Balcony,%201957.jpeg
+Completed 302 Found in 35ms (ActiveRecord: 5.5ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQ2LCJwdXIiOiJibG9iX2lkIn19--165e7503e22ddfb11cc3a6da387a2aaf9fff0a6b", "filename" => "roy-lichtenstein-whaam-1963-postmodern-art-1"}
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQ1LCJwdXIiOiJibG9iX2lkIn19--5166625f06a7a886bbece489352b1334a1327b0a/jasper-johns-american-flag-e1596679284568.webp" for ::1 at 2026-01-14 17:30:04 +0100
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 346 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: sczg0ajp7uslnu2w9147ebgfelfr (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJzY3pnMGFqcDd1c2xudTJ3OTE0N2ViZ2ZlbGZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi13aGFhbS0xOTYzLXBvc3Rtb2Rlcm4tYXJ0LTEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ3JveS1saWNodGVuc3RlaW4td2hhYW0tMTk2My1wb3N0bW9kZXJuLWFydC0xLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC4zNThaIiwicHVyIjoiYmxvYl9rZXkifX0=--d42d6eac6d4dd21300b9f91e2c9b678867db5921/roy-lichtenstein-whaam-1963-postmodern-art-1.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJzY3pnMGFqcDd1c2xudTJ3OTE0N2ViZ2ZlbGZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi13aGFhbS0xOTYzLXBvc3Rtb2Rlcm4tYXJ0LTEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ3JveS1saWNodGVuc3RlaW4td2hhYW0tMTk2My1wb3N0bW9kZXJuLWFydC0xLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC4zNThaIiwicHVyIjoiYmxvYl9rZXkifX0=--d42d6eac6d4dd21300b9f91e2c9b678867db5921/roy-lichtenstein-whaam-1963-postmodern-art-1.webp
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+  [1m[36mActiveStorage::Blob Load (38.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: i3lah5vl697848yboa9f1bc6ydyu (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJpM2xhaDV2bDY5Nzg0OHlib2E5ZjFiYzZ5ZHl1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiYW5keS13YXJob2wtY2FtcGJlbGxzLXNvdXAtY2Fucy0xOTYyLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydhbmR5LXdhcmhvbC1jYW1wYmVsbHMtc291cC1jYW5zLTE5NjIud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjA0LjM4M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--abcee66caf33bf5de5907b8412537822d21e4612/andy-warhol-campbells-soup-cans-1962.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJpM2xhaDV2bDY5Nzg0OHlib2E5ZjFiYzZ5ZHl1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiYW5keS13YXJob2wtY2FtcGJlbGxzLXNvdXAtY2Fucy0xOTYyLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydhbmR5LXdhcmhvbC1jYW1wYmVsbHMtc291cC1jYW5zLTE5NjIud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjA0LjM4M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--abcee66caf33bf5de5907b8412537822d21e4612/andy-warhol-campbells-soup-cans-1962.webp
+Completed 302 Found in 82ms (ActiveRecord: 49.4ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6cDNzYjgwYTRiZ2JoZnRneHAzcG5qZDU4eXhlIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MDQuMzI3WiIsInB1ciI6ImJsb2Jfa2V5In19--282e5ddb0a1e7666f2a4a0809e511e5ddfbc4444/roy-lichtenstein-as-i-opened-fire-1964-4.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQ0LCJwdXIiOiJibG9iX2lkIn19--e9675c7e1c9568b884963fa757c77f03d75218b1/richard-hamilton-just-what-is-it-1956.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQ1LCJwdXIiOiJibG9iX2lkIn19--5166625f06a7a886bbece489352b1334a1327b0a", "filename" => "jasper-johns-american-flag-e1596679284568"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 345 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: wrgtuumuwubv0fqkmq53e4njmde2 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3cmd0dXVtdXd1YnYwZnFrbXE1M2U0bmptZGUyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiamFzcGVyLWpvaG5zLWFtZXJpY2FuLWZsYWctZTE1OTY2NzkyODQ1Njgud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ2phc3Blci1qb2hucy1hbWVyaWNhbi1mbGFnLWUxNTk2Njc5Mjg0NTY4LndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC40MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--4efb5ca84fd920e60f0b2078efd25a0b86e2941e/jasper-johns-american-flag-e1596679284568.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3cmd0dXVtdXd1YnYwZnFrbXE1M2U0bmptZGUyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiamFzcGVyLWpvaG5zLWFtZXJpY2FuLWZsYWctZTE1OTY2NzkyODQ1Njgud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ2phc3Blci1qb2hucy1hbWVyaWNhbi1mbGFnLWUxNTk2Njc5Mjg0NTY4LndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC40MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--4efb5ca84fd920e60f0b2078efd25a0b86e2941e/jasper-johns-american-flag-e1596679284568.webp
+Completed 302 Found in 11ms (ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "roy-lichtenstein-as-i-opened-fire-1964-4"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwbng5dmx2Zm9mMHdmbG4wd3g4ZG9yNjVmeGE2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUGV0ZXIgQmxha2UlMkMgT24gdGhlIEJhbGNvbnklMkMgMTk1Ny5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUGV0ZXIlMjBCbGFrZSUyQyUyME9uJTIwdGhlJTIwQmFsY29ueSUyQyUyMDE5NTcuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjA0LjM0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--be175f9517d38e74521a0b78184046172e36597e/Peter%20Blake,%20On%20the%20Balcony,%201957.jpeg" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQ0LCJwdXIiOiJibG9iX2lkIn19--e9675c7e1c9568b884963fa757c77f03d75218b1", "filename" => "richard-hamilton-just-what-is-it-1956"}
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 344 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: b8y4a18dmxbmsiul6btijjoribdb (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJiOHk0YTE4ZG14Ym1zaXVsNmJ0aWpqb3JpYmRiIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MDQuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--a80f31b81838e849950b8b49c5ceaf94db32bd41/richard-hamilton-just-what-is-it-1956.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJiOHk0YTE4ZG14Ym1zaXVsNmJ0aWpqb3JpYmRiIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MDQuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--a80f31b81838e849950b8b49c5ceaf94db32bd41/richard-hamilton-just-what-is-it-1956.webp
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJpM2xhaDV2bDY5Nzg0OHlib2E5ZjFiYzZ5ZHl1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiYW5keS13YXJob2wtY2FtcGJlbGxzLXNvdXAtY2Fucy0xOTYyLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydhbmR5LXdhcmhvbC1jYW1wYmVsbHMtc291cC1jYW5zLTE5NjIud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjA0LjM4M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--abcee66caf33bf5de5907b8412537822d21e4612/andy-warhol-campbells-soup-cans-1962.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJzY3pnMGFqcDd1c2xudTJ3OTE0N2ViZ2ZlbGZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi13aGFhbS0xOTYzLXBvc3Rtb2Rlcm4tYXJ0LTEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ3JveS1saWNodGVuc3RlaW4td2hhYW0tMTk2My1wb3N0bW9kZXJuLWFydC0xLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC4zNThaIiwicHVyIjoiYmxvYl9rZXkifX0=--d42d6eac6d4dd21300b9f91e2c9b678867db5921/roy-lichtenstein-whaam-1963-postmodern-art-1.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Peter Blake, On the Balcony, 1957"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3cmd0dXVtdXd1YnYwZnFrbXE1M2U0bmptZGUyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiamFzcGVyLWpvaG5zLWFtZXJpY2FuLWZsYWctZTE1OTY2NzkyODQ1Njgud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ2phc3Blci1qb2hucy1hbWVyaWNhbi1mbGFnLWUxNTk2Njc5Mjg0NTY4LndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC40MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--4efb5ca84fd920e60f0b2078efd25a0b86e2941e/jasper-johns-american-flag-e1596679284568.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "andy-warhol-campbells-soup-cans-1962"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "roy-lichtenstein-whaam-1963-postmodern-art-1"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Completed 200 OK in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQzLCJwdXIiOiJibG9iX2lkIn19--4d47cea6371c314af7fdf0a546dbda636d67f9d1/E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a.jpeg" for ::1 at 2026-01-14 17:30:04 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJiOHk0YTE4ZG14Ym1zaXVsNmJ0aWpqb3JpYmRiIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MDQuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--a80f31b81838e849950b8b49c5ceaf94db32bd41/richard-hamilton-just-what-is-it-1956.webp" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "jasper-johns-american-flag-e1596679284568"}
+Completed 200 OK in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzQzLCJwdXIiOiJibG9iX2lkIn19--4d47cea6371c314af7fdf0a546dbda636d67f9d1", "filename" => "E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "richard-hamilton-just-what-is-it-1956"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 343 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: k34lbids5jp7ecreyu43r491g25g (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrMzRsYmlkczVqcDdlY3JleXU0M3I0OTFnMjVnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRTdGREM4NjktOTU5MS00NzA0LUEyMkQtRUQyREJDNkVCQkE1XzFfMjAxX2EuanBlZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ0U3RkRDODY5LTk1OTEtNDcwNC1BMjJELUVEMkRCQzZFQkJBNV8xXzIwMV9hLmpwZWciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC41MjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--301508b1fe3abf2344e372511e8318f9789d0a27/E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrMzRsYmlkczVqcDdlY3JleXU0M3I0OTFnMjVnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRTdGREM4NjktOTU5MS00NzA0LUEyMkQtRUQyREJDNkVCQkE1XzFfMjAxX2EuanBlZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ0U3RkRDODY5LTk1OTEtNDcwNC1BMjJELUVEMkRCQzZFQkJBNV8xXzIwMV9hLmpwZWciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC41MjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--301508b1fe3abf2344e372511e8318f9789d0a27/E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a.jpeg
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrMzRsYmlkczVqcDdlY3JleXU0M3I0OTFnMjVnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRTdGREM4NjktOTU5MS00NzA0LUEyMkQtRUQyREJDNkVCQkE1XzFfMjAxX2EuanBlZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ0U3RkRDODY5LTk1OTEtNDcwNC1BMjJELUVEMkRCQzZFQkJBNV8xXzIwMV9hLmpwZWciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTowNC41MjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--301508b1fe3abf2344e372511e8318f9789d0a27/E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a.jpeg" for ::1 at 2026-01-14 17:30:04 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2026-01-14 17:30:06 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Count (14.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:6:in 'PostsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:43
+  [1m[36mActionText::RichText Load (2.2ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Post' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:50
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 38.6ms | GC: 12.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Post' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:54
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:59
+  Rendered posts/index.html.erb within layouts/application (Duration: 108.5ms | GC: 15.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 110.2ms | GC: 15.0ms)
+Completed 200 OK in 159ms (Views: 102.6ms | ActiveRecord: 26.3ms (5 queries, 0 cached) | GC: 15.2ms)
+
+
+Started GET "/blogs" for ::1 at 2026-01-14 17:30:14 +0100
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Count (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:52
+  [1m[36mBloggable Pluck (1.6ms)[0m  [1m[34mSELECT "bloggables"."novine_id" FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/models/bloggable.rb:5:in '<class:Bloggable>'
+  [1m[36mBloggable Load (0.3ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/models/bloggable.rb:6:in 'Enumerable#map'
+  [1m[36mNovine Pluck (1.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  [1m[36mNovine Load (1.9ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 1 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 2 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 3 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 4 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 5 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 6 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 7 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  Rendered blogs/index.html.erb within layouts/application (Duration: 125.3ms | GC: 0.4ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 126.7ms | GC: 0.4ms)
+Completed 200 OK in 145ms (Views: 114.2ms | ActiveRecord: 16.4ms (13 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/blogs?page=2" for ::1 at 2026-01-14 17:30:21 +0100
+Processing by BlogsController#index as HTML
+  Parameters: {"page" => "2"}
+  [1m[36mBlog Count (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 7 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:52
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 8 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.6ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 9 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  Rendered blogs/index.html.erb within layouts/application (Duration: 45.6ms | GC: 0.2ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | GC: 0.2ms)
+Completed 200 OK in 59ms (Views: 45.3ms | ActiveRecord: 4.8ms (10 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/novines/4" for ::1 at 2026-01-14 17:30:21 +0100
+Processing by NovinesController#show as HTML
+  Parameters: {"id" => "4"}
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" WHERE "novines"."id" = 4 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:75:in 'NovinesController#set_novine'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mBlog Load (12.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 4 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:35
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:53
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 357 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:54
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 4 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:62
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.7ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'pictures' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:67
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'pictures' /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:68
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 358 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:69
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered novines/show.html.erb within layouts/application (Duration: 104.6ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 106.0ms | GC: 0.0ms)
+Completed 200 OK in 122ms (Views: 95.3ms | ActiveRecord: 15.7ms (13 queries, 4 cached) | GC: 0.5ms)
+
+
+Started GET "/blogs?page=4" for ::1 at 2026-01-14 17:30:26 +0100
+Processing by BlogsController#index as HTML
+  Parameters: {"page" => "4"}
+  [1m[36mBlog Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 21 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:52
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 22 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 23 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 24 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 25 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  Rendered blogs/index.html.erb within layouts/application (Duration: 15.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 15.7ms | ActiveRecord: 2.5ms (7 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/blogs?page=3" for ::1 at 2026-01-14 17:30:26 +0100
+Processing by BlogsController#index as HTML
+  Parameters: {"page" => "3"}
+  [1m[36mBlog Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 14 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:52
+  [1m[36mNovine Load (0.7ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 17 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.7ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 18 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 19 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.6ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 20 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.7ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 21 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  Rendered blogs/index.html.erb within layouts/application (Duration: 30.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 30.8ms | ActiveRecord: 5.2ms (10 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/blogs/18" for ::1 at 2026-01-14 17:30:27 +0100
+Processing by BlogsController#show as HTML
+  Parameters: {"id" => "18"}
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = 18 LIMIT 1 /*action='show',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:77:in 'BlogsController#set_blog'
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" WHERE "novines"."id" = 18 ORDER BY created_at DESC LIMIT 1 /*action='show',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:26:in 'BlogsController#show'
+Completed 404 Not Found in 32ms (ActiveRecord: 1.3ms (2 queries, 0 cached) | GC: 10.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Novine with 'id'="18"):
+  
+app/controllers/blogs_controller.rb:26:in 'BlogsController#show'
+Started GET "/novines" for ::1 at 2026-01-14 17:30:33 +0100
+Processing by NovinesController#index as HTML
+  [1m[36mNovine Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:12:in 'NovinesController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/index.html.erb within layouts/application
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 1 OFFSET 0 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:20
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:48
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 13 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.7ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 13 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.0ms | GC: 0.0ms)
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 12 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.6ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 12 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 3.1ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 410 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 11 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.8ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 11 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.8ms | GC: 0.8ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 12.1ms | GC: 2.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 409 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 10 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.2ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 10 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.3ms | GC: 0.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 406 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 9 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.2ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 9 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 9 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 405 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 8 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 8 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.5ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 404 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 7 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.2ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 7 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 403 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  Rendered novines/index.html.erb within layouts/application (Duration: 122.2ms | GC: 8.3ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 129.4ms | GC: 8.3ms)
+Completed 200 OK in 140ms (Views: 122.6ms | ActiveRecord: 11.3ms (36 queries, 4 cached) | GC: 8.3ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA2LCJwdXIiOiJibG9iX2lkIn19--2a621f8b281a3ddea4f9c2cd8b968c305496efc0/Crna%20svadba%20-%20predrag-bjelac-830x553.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA1LCJwdXIiOiJibG9iX2lkIn19--76ec1647402e97488c8a1022edbf82bcf6b79c13/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDEwLCJwdXIiOiJibG9iX2lkIn19--807cd5df0dd690fb6784c7a3ce158c4dfa439480/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg" for ::1 at 2026-01-14 17:30:34 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA2LCJwdXIiOiJibG9iX2lkIn19--2a621f8b281a3ddea4f9c2cd8b968c305496efc0", "filename" => "Crna svadba - predrag-bjelac-830x553"}
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA1LCJwdXIiOiJibG9iX2lkIn19--76ec1647402e97488c8a1022edbf82bcf6b79c13", "filename" => "Preminula poznata glumica, tri puta nominovana za Oskara"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDEwLCJwdXIiOiJibG9iX2lkIn19--807cd5df0dd690fb6784c7a3ce158c4dfa439480", "filename" => "Vremenska prognoza za 7. novembar 2025. "}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 406 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (1.5ms) [0m[34mGenerated URL for file at key: v65gap3djgbc6vgr74nix11iv3m9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ2NjVnYXAzZGpnYmM2dmdyNzRuaXgxMWl2M205IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQ3JuYSBzdmFkYmEgLSBwcmVkcmFnLWJqZWxhYy04MzB4NTUzLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydDcm5hJTIwc3ZhZGJhJTIwLSUyMHByZWRyYWctYmplbGFjLTgzMHg1NTMud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--41d9c29878fbada63127e55818579386a82dc102/Crna%20svadba%20-%20predrag-bjelac-830x553.webp)[0m
+  [1m[36mActiveStorage::Blob Load (2.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 405 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ2NjVnYXAzZGpnYmM2dmdyNzRuaXgxMWl2M205IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQ3JuYSBzdmFkYmEgLSBwcmVkcmFnLWJqZWxhYy04MzB4NTUzLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydDcm5hJTIwc3ZhZGJhJTIwLSUyMHByZWRyYWctYmplbGFjLTgzMHg1NTMud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--41d9c29878fbada63127e55818579386a82dc102/Crna%20svadba%20-%20predrag-bjelac-830x553.webp
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: u57cojl0xvado54p03cwnl63g7ei (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1NTdjb2psMHh2YWRvNTRwMDNjd25sNjNnN2VpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUHJlbWludWxhIHBvem5hdGEgZ2x1bWljYSUyQyB0cmkgcHV0YSBub21pbm92YW5hIHphIE9za2FyYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnUHJlbWludWxhJTIwcG96bmF0YSUyMGdsdW1pY2ElMkMlMjB0cmklMjBwdXRhJTIwbm9taW5vdmFuYSUyMHphJTIwT3NrYXJhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTozNC4yNTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--ca451ebb4c75c483536b508d1f9059fa96a8d4ee/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp)[0m
+Completed 302 Found in 16ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1NTdjb2psMHh2YWRvNTRwMDNjd25sNjNnN2VpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUHJlbWludWxhIHBvem5hdGEgZ2x1bWljYSUyQyB0cmkgcHV0YSBub21pbm92YW5hIHphIE9za2FyYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnUHJlbWludWxhJTIwcG96bmF0YSUyMGdsdW1pY2ElMkMlMjB0cmklMjBwdXRhJTIwbm9taW5vdmFuYSUyMHphJTIwT3NrYXJhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTozNC4yNTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--ca451ebb4c75c483536b508d1f9059fa96a8d4ee/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp
+Completed 302 Found in 13ms (ActiveRecord: 2.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 410 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: 7h30vvst45y9omw7gzevcfqifw6r (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI3aDMwdnZzdDQ1eTlvbXc3Z3pldmNmcWlmdzZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVnJlbWVuc2thIHByb2dub3phIHphIDcuIG5vdmVtYmFyIDIwMjUuIC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVnJlbWVuc2thJTIwcHJvZ25vemElMjB6YSUyMDcuJTIwbm92ZW1iYXIlMjAyMDI1LiUyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MzQuMjY1WiIsInB1ciI6ImJsb2Jfa2V5In19--24634de6419369374da1d10657b3238f822172a2/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI3aDMwdnZzdDQ1eTlvbXc3Z3pldmNmcWlmdzZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVnJlbWVuc2thIHByb2dub3phIHphIDcuIG5vdmVtYmFyIDIwMjUuIC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVnJlbWVuc2thJTIwcHJvZ25vemElMjB6YSUyMDcuJTIwbm92ZW1iYXIlMjAyMDI1LiUyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MzQuMjY1WiIsInB1ciI6ImJsb2Jfa2V5In19--24634de6419369374da1d10657b3238f822172a2/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg
+Completed 302 Found in 18ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA5LCJwdXIiOiJibG9iX2lkIn19--30643ac137869c8dafec7f952e39d4cf68988dcc/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDEyLCJwdXIiOiJibG9iX2lkIn19--5ead3f72e3e8e2b55c593d1060aa9f21aba8a0f5/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA0LCJwdXIiOiJibG9iX2lkIn19--37c411f385ce60d67920a0b8ec0fe9d3e852104b/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDEyLCJwdXIiOiJibG9iX2lkIn19--5ead3f72e3e8e2b55c593d1060aa9f21aba8a0f5", "filename" => "Otisak Milene Pavlović Barili i u radovima 20. bijenala -U svjetlu Milene-"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA5LCJwdXIiOiJibG9iX2lkIn19--30643ac137869c8dafec7f952e39d4cf68988dcc", "filename" => "Nacionalni stadion i faktor Taylor Swift- Zašto kasni, koliko košta i hoće li stići na Expo-"}
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA0LCJwdXIiOiJibG9iX2lkIn19--37c411f385ce60d67920a0b8ec0fe9d3e852104b", "filename" => "Od Nevesinjske puške do Solunskog fronta"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: 0aa8qcmi8llm942160lo44prhh0w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwYWE4cWNtaThsbG05NDIxNjBsbzQ0cHJoaDB3IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT3Rpc2FrIE1pbGVuZSBQYXZsb3ZpYyUzRiBCYXJpbGkgaSB1IHJhZG92aW1hIDIwLiBiaWplbmFsYSAtVSBzdmpldGx1IE1pbGVuZS0uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnT3Rpc2FrJTIwTWlsZW5lJTIwUGF2bG92aWMlQ0MlODElMjBCYXJpbGklMjBpJTIwdSUyMHJhZG92aW1hJTIwMjAuJTIwYmlqZW5hbGElMjAtVSUyMHN2amV0bHUlMjBNaWxlbmUtLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3BuZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MzQuMjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--2f0821402dcdb9df517711e9fc8117016b2864d2/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwYWE4cWNtaThsbG05NDIxNjBsbzQ0cHJoaDB3IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT3Rpc2FrIE1pbGVuZSBQYXZsb3ZpYyUzRiBCYXJpbGkgaSB1IHJhZG92aW1hIDIwLiBiaWplbmFsYSAtVSBzdmpldGx1IE1pbGVuZS0uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnT3Rpc2FrJTIwTWlsZW5lJTIwUGF2bG92aWMlQ0MlODElMjBCYXJpbGklMjBpJTIwdSUyMHJhZG92aW1hJTIwMjAuJTIwYmlqZW5hbGElMjAtVSUyMHN2amV0bHUlMjBNaWxlbmUtLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3BuZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MzQuMjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--2f0821402dcdb9df517711e9fc8117016b2864d2/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 409 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: ak8hql5wdhgxnv4pumti1zg0r4ed (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhazhocWw1d2RoZ3hudjRwdW10aTF6ZzByNGVkIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFjaW9uYWxuaSBzdGFkaW9uIGkgZmFrdG9yIFRheWxvciBTd2lmdC0gWmFzJTNGdG8ga2FzbmklMkMga29saWtvIGtvcyUzRnRhIGkgaG9jJTNGZSBsaSBzdGljJTNGaSBuYSBFeHBvLS5qcGdcIjsgZmlsZW5hbWUqPVVURi04JydOYWNpb25hbG5pJTIwc3RhZGlvbiUyMGklMjBmYWt0b3IlMjBUYXlsb3IlMjBTd2lmdC0lMjBaYXMlQ0MlOEN0byUyMGthc25pJTJDJTIwa29saWtvJTIwa29zJUNDJThDdGElMjBpJTIwaG9jJUNDJTgxZSUyMGxpJTIwc3RpYyVDQyU4MWklMjBuYSUyMEV4cG8tLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI5NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--586c9d4ccedac45f8e291a64c0b24c1c2792ff6b/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg)[0m
+  [1m[36mActiveStorage::Blob Load (5.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 404 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhazhocWw1d2RoZ3hudjRwdW10aTF6ZzByNGVkIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFjaW9uYWxuaSBzdGFkaW9uIGkgZmFrdG9yIFRheWxvciBTd2lmdC0gWmFzJTNGdG8ga2FzbmklMkMga29saWtvIGtvcyUzRnRhIGkgaG9jJTNGZSBsaSBzdGljJTNGaSBuYSBFeHBvLS5qcGdcIjsgZmlsZW5hbWUqPVVURi04JydOYWNpb25hbG5pJTIwc3RhZGlvbiUyMGklMjBmYWt0b3IlMjBUYXlsb3IlMjBTd2lmdC0lMjBaYXMlQ0MlOEN0byUyMGthc25pJTJDJTIwa29saWtvJTIwa29zJUNDJThDdGElMjBpJTIwaG9jJUNDJTgxZSUyMGxpJTIwc3RpYyVDQyU4MWklMjBuYSUyMEV4cG8tLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI5NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--586c9d4ccedac45f8e291a64c0b24c1c2792ff6b/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg
+[36m  Disk Storage (0.1ms) [0m[34mGenerated URL for file at key: ed6ul8glw9i4o2kit8fehcpw3gl6 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJlZDZ1bDhnbHc5aTRvMmtpdDhmZWhjcHczZ2w2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT2QgTmV2ZXNpbmpza2UgcHVzJTNGa2UgZG8gU29sdW5za29nIGZyb250YS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnT2QlMjBOZXZlc2luanNrZSUyMHB1cyVDQyU4Q2tlJTIwZG8lMjBTb2x1bnNrb2clMjBmcm9udGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI5NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--83692a2c61611ada69d0360aac875ca08cd82dd6/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp)[0m
+Completed 302 Found in 11ms (ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 4.0ms)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJlZDZ1bDhnbHc5aTRvMmtpdDhmZWhjcHczZ2w2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT2QgTmV2ZXNpbmpza2UgcHVzJTNGa2UgZG8gU29sdW5za29nIGZyb250YS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnT2QlMjBOZXZlc2luanNrZSUyMHB1cyVDQyU4Q2tlJTIwZG8lMjBTb2x1bnNrb2clMjBmcm9udGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI5NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--83692a2c61611ada69d0360aac875ca08cd82dd6/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms (1 query, 0 cached) | GC: 4.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1NTdjb2psMHh2YWRvNTRwMDNjd25sNjNnN2VpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUHJlbWludWxhIHBvem5hdGEgZ2x1bWljYSUyQyB0cmkgcHV0YSBub21pbm92YW5hIHphIE9za2FyYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnUHJlbWludWxhJTIwcG96bmF0YSUyMGdsdW1pY2ElMkMlMjB0cmklMjBwdXRhJTIwbm9taW5vdmFuYSUyMHphJTIwT3NrYXJhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTozNC4yNTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--ca451ebb4c75c483536b508d1f9059fa96a8d4ee/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ2NjVnYXAzZGpnYmM2dmdyNzRuaXgxMWl2M205IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQ3JuYSBzdmFkYmEgLSBwcmVkcmFnLWJqZWxhYy04MzB4NTUzLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydDcm5hJTIwc3ZhZGJhJTIwLSUyMHByZWRyYWctYmplbGFjLTgzMHg1NTMud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--41d9c29878fbada63127e55818579386a82dc102/Crna%20svadba%20-%20predrag-bjelac-830x553.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI3aDMwdnZzdDQ1eTlvbXc3Z3pldmNmcWlmdzZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVnJlbWVuc2thIHByb2dub3phIHphIDcuIG5vdmVtYmFyIDIwMjUuIC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVnJlbWVuc2thJTIwcHJvZ25vemElMjB6YSUyMDcuJTIwbm92ZW1iYXIlMjAyMDI1LiUyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MzQuMjY1WiIsInB1ciI6ImJsb2Jfa2V5In19--24634de6419369374da1d10657b3238f822172a2/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg" for ::1 at 2026-01-14 17:30:34 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Vremenska prognoza za 7. novembar 2025. "}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Preminula poznata glumica, tri puta nominovana za Oskara"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Crna svadba - predrag-bjelac-830x553"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwYWE4cWNtaThsbG05NDIxNjBsbzQ0cHJoaDB3IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT3Rpc2FrIE1pbGVuZSBQYXZsb3ZpYyUzRiBCYXJpbGkgaSB1IHJhZG92aW1hIDIwLiBiaWplbmFsYSAtVSBzdmpldGx1IE1pbGVuZS0uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnT3Rpc2FrJTIwTWlsZW5lJTIwUGF2bG92aWMlQ0MlODElMjBCYXJpbGklMjBpJTIwdSUyMHJhZG92aW1hJTIwMjAuJTIwYmlqZW5hbGElMjAtVSUyMHN2amV0bHUlMjBNaWxlbmUtLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3BuZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6MzQuMjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--2f0821402dcdb9df517711e9fc8117016b2864d2/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhazhocWw1d2RoZ3hudjRwdW10aTF6ZzByNGVkIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFjaW9uYWxuaSBzdGFkaW9uIGkgZmFrdG9yIFRheWxvciBTd2lmdC0gWmFzJTNGdG8ga2FzbmklMkMga29saWtvIGtvcyUzRnRhIGkgaG9jJTNGZSBsaSBzdGljJTNGaSBuYSBFeHBvLS5qcGdcIjsgZmlsZW5hbWUqPVVURi04JydOYWNpb25hbG5pJTIwc3RhZGlvbiUyMGklMjBmYWt0b3IlMjBUYXlsb3IlMjBTd2lmdC0lMjBaYXMlQ0MlOEN0byUyMGthc25pJTJDJTIwa29saWtvJTIwa29zJUNDJThDdGElMjBpJTIwaG9jJUNDJTgxZSUyMGxpJTIwc3RpYyVDQyU4MWklMjBuYSUyMEV4cG8tLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI5NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--586c9d4ccedac45f8e291a64c0b24c1c2792ff6b/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg" for ::1 at 2026-01-14 17:30:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJlZDZ1bDhnbHc5aTRvMmtpdDhmZWhjcHczZ2w2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT2QgTmV2ZXNpbmpza2UgcHVzJTNGa2UgZG8gU29sdW5za29nIGZyb250YS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnT2QlMjBOZXZlc2luanNrZSUyMHB1cyVDQyU4Q2tlJTIwZG8lMjBTb2x1bnNrb2clMjBmcm9udGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjM0LjI5NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--83692a2c61611ada69d0360aac875ca08cd82dd6/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Otisak Milene Pavlović Barili i u radovima 20. bijenala -U svjetlu Milene-"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Nacionalni stadion i faktor Taylor Swift- Zašto kasni, koliko košta i hoće li stići na Expo-"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Od Nevesinjske puške do Solunskog fronta"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDAzLCJwdXIiOiJibG9iX2lkIn19--8e5f916454f991480233a442f45bf37b88f3e0e7/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDAzLCJwdXIiOiJibG9iX2lkIn19--8e5f916454f991480233a442f45bf37b88f3e0e7", "filename" => "Najmanje 8 osoba poginulo u sudaru vozova"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 403 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: fnm5fitsp5bw2ex5nc0q2cqn2i7q (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJmbm01Zml0c3A1YncyZXg1bmMwcTJjcW4yaTdxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFqbWFuamUgOCBvc29iYSBwb2dpbnVsbyB1IHN1ZGFydSB2b3pvdmEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ05ham1hbmplJTIwOCUyMG9zb2JhJTIwcG9naW51bG8lMjB1JTIwc3VkYXJ1JTIwdm96b3ZhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTozNC4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--d9e96c919eea1bc31142084579c11a051b63cbd7/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJmbm01Zml0c3A1YncyZXg1bmMwcTJjcW4yaTdxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFqbWFuamUgOCBvc29iYSBwb2dpbnVsbyB1IHN1ZGFydSB2b3pvdmEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ05ham1hbmplJTIwOCUyMG9zb2JhJTIwcG9naW51bG8lMjB1JTIwc3VkYXJ1JTIwdm96b3ZhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTozNC4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--d9e96c919eea1bc31142084579c11a051b63cbd7/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJmbm01Zml0c3A1YncyZXg1bmMwcTJjcW4yaTdxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFqbWFuamUgOCBvc29iYSBwb2dpbnVsbyB1IHN1ZGFydSB2b3pvdmEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ05ham1hbmplJTIwOCUyMG9zb2JhJTIwcG9naW51bG8lMjB1JTIwc3VkYXJ1JTIwdm96b3ZhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTozNC4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--d9e96c919eea1bc31142084579c11a051b63cbd7/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp" for ::1 at 2026-01-14 17:30:34 +0100
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Najmanje 8 osoba poginulo u sudaru vozova"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/privacy" for ::1 at 2026-01-14 17:30:46 +0100
+Processing by HomeController#privacy as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/privacy.html.erb within layouts/application
+  Rendered home/privacy.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='privacy',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 11.2ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/novines?page=2" for ::1 at 2026-01-14 17:30:48 +0100
+Processing by NovinesController#index as HTML
+  Parameters: {"page" => "2"}
+  [1m[36mNovine Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:12:in 'NovinesController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/index.html.erb within layouts/application
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 1 OFFSET 7 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 365 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:20
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 7 OFFSET 7 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:48
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 6 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 6 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 365 LIMIT 1[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 5 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 5 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 4.1ms | GC: 0.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 364 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 4 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 4 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.1ms | GC: 0.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 357 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 3 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 3 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 5.9ms | GC: 0.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 359 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 2 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 2 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 2.3ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 360 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 4.5ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 362 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  Rendered novines/index.html.erb within layouts/application (Duration: 102.9ms | GC: 4.7ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 105.7ms | GC: 4.7ms)
+Completed 200 OK in 112ms (Views: 95.0ms | ActiveRecord: 12.2ms (32 queries, 4 cached) | GC: 5.7ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzU3LCJwdXIiOiJibG9iX2lkIn19--869e91567fa6b25d7e23c9db19c2c14fd37c3be9/Zvijezda%20o%20povrije%C4%91enim%20igrac%CC%8Cima-%20Carter%20izas%CC%8Cao%20iz%20bolnice,%20Graham%20trenira,%20Nwora%20pitan%20o%20PAO-u.jpg" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzY0LCJwdXIiOiJibG9iX2lkIn19--a37adbd3c3bd09bd47cb7a6251597b73cc08365e/BiH%20je%20od%20danas%20dio%20Google%20street%20view-%20Pogledajte%20kako%20sve%20izgleda.webp" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzY1LCJwdXIiOiJibG9iX2lkIn19--2df5b945fa784e368e051089c9c0e15dee9b652b/Djec%CC%8Cije%20igrac%CC%8Cke%20hitno%20povuc%CC%8Cene%20sa%20trz%CC%8Cis%CC%8Cta.webp" for ::1 at 2026-01-14 17:30:48 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzY0LCJwdXIiOiJibG9iX2lkIn19--a37adbd3c3bd09bd47cb7a6251597b73cc08365e", "filename" => "BiH je od danas dio Google street view- Pogledajte kako sve izgleda"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzU3LCJwdXIiOiJibG9iX2lkIn19--869e91567fa6b25d7e23c9db19c2c14fd37c3be9", "filename" => "Zvijezda o povrijeđenim igračima- Carter izašao iz bolnice, Graham trenira, Nwora pitan o PAO-u"}
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzY1LCJwdXIiOiJibG9iX2lkIn19--2df5b945fa784e368e051089c9c0e15dee9b652b", "filename" => "Dječije igračke hitno povučene sa tržišta"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 364 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: q5bd4c5hf6odv3cnxfxrep72q89j (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJxNWJkNGM1aGY2b2R2M2NueGZ4cmVwNzJxODlqIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQmlIIGplIG9kIGRhbmFzIGRpbyBHb29nbGUgc3RyZWV0IHZpZXctIFBvZ2xlZGFqdGUga2FrbyBzdmUgaXpnbGVkYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnQmlIJTIwamUlMjBvZCUyMGRhbmFzJTIwZGlvJTIwR29vZ2xlJTIwc3RyZWV0JTIwdmlldy0lMjBQb2dsZWRhanRlJTIwa2FrbyUyMHN2ZSUyMGl6Z2xlZGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjQ4Ljc0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--873797000af088e3253518bf00e45fbde325a007/BiH%20je%20od%20danas%20dio%20Google%20street%20view-%20Pogledajte%20kako%20sve%20izgleda.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJxNWJkNGM1aGY2b2R2M2NueGZ4cmVwNzJxODlqIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQmlIIGplIG9kIGRhbmFzIGRpbyBHb29nbGUgc3RyZWV0IHZpZXctIFBvZ2xlZGFqdGUga2FrbyBzdmUgaXpnbGVkYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnQmlIJTIwamUlMjBvZCUyMGRhbmFzJTIwZGlvJTIwR29vZ2xlJTIwc3RyZWV0JTIwdmlldy0lMjBQb2dsZWRhanRlJTIwa2FrbyUyMHN2ZSUyMGl6Z2xlZGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjQ4Ljc0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--873797000af088e3253518bf00e45fbde325a007/BiH%20je%20od%20danas%20dio%20Google%20street%20view-%20Pogledajte%20kako%20sve%20izgleda.webp
+Completed 302 Found in 17ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 7.6ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 357 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: k5bmyuztbpw878c76gcut0uvxz0p (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrNWJteXV6dGJwdzg3OGM3NmdjdXQwdXZ4ejBwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiWnZpamV6ZGEgbyBwb3ZyaWplZGVuaW0gaWdyYWMlM0ZpbWEtIENhcnRlciBpemFzJTNGYW8gaXogYm9sbmljZSUyQyBHcmFoYW0gdHJlbmlyYSUyQyBOd29yYSBwaXRhbiBvIFBBTy11LmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ1p2aWplemRhJTIwbyUyMHBvdnJpamUlQzQlOTFlbmltJTIwaWdyYWMlQ0MlOENpbWEtJTIwQ2FydGVyJTIwaXphcyVDQyU4Q2FvJTIwaXolMjBib2xuaWNlJTJDJTIwR3JhaGFtJTIwdHJlbmlyYSUyQyUyME53b3JhJTIwcGl0YW4lMjBvJTIwUEFPLXUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzQ1WiIsInB1ciI6ImJsb2Jfa2V5In19--9c078bc08ed0b69fb4e2207b7d90fefbafde8f4d/Zvijezda%20o%20povrije%C4%91enim%20igrac%CC%8Cima-%20Carter%20izas%CC%8Cao%20iz%20bolnice,%20Graham%20trenira,%20Nwora%20pitan%20o%20PAO-u.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrNWJteXV6dGJwdzg3OGM3NmdjdXQwdXZ4ejBwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiWnZpamV6ZGEgbyBwb3ZyaWplZGVuaW0gaWdyYWMlM0ZpbWEtIENhcnRlciBpemFzJTNGYW8gaXogYm9sbmljZSUyQyBHcmFoYW0gdHJlbmlyYSUyQyBOd29yYSBwaXRhbiBvIFBBTy11LmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ1p2aWplemRhJTIwbyUyMHBvdnJpamUlQzQlOTFlbmltJTIwaWdyYWMlQ0MlOENpbWEtJTIwQ2FydGVyJTIwaXphcyVDQyU4Q2FvJTIwaXolMjBib2xuaWNlJTJDJTIwR3JhaGFtJTIwdHJlbmlyYSUyQyUyME53b3JhJTIwcGl0YW4lMjBvJTIwUEFPLXUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzQ1WiIsInB1ciI6ImJsb2Jfa2V5In19--9c078bc08ed0b69fb4e2207b7d90fefbafde8f4d/Zvijezda%20o%20povrije%C4%91enim%20igrac%CC%8Cima-%20Carter%20izas%CC%8Cao%20iz%20bolnice,%20Graham%20trenira,%20Nwora%20pitan%20o%20PAO-u.jpg
+Completed 302 Found in 20ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 7.6ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 365 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (4.0ms) [0m[34mGenerated URL for file at key: 6k9dnu1agb7qmp0t9k86qp66l96o (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI2azlkbnUxYWdiN3FtcDB0OWs4NnFwNjZsOTZvIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRGplYyUzRmlqZSBpZ3JhYyUzRmtlIGhpdG5vIHBvdnVjJTNGZW5lIHNhIHRyeiUzRmlzJTNGdGEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ0RqZWMlQ0MlOENpamUlMjBpZ3JhYyVDQyU4Q2tlJTIwaGl0bm8lMjBwb3Z1YyVDQyU4Q2VuZSUyMHNhJTIwdHJ6JUNDJThDaXMlQ0MlOEN0YS53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzUzWiIsInB1ciI6ImJsb2Jfa2V5In19--34c7499ff94c9c81177369fd5c9308f9cd27989f/Djec%CC%8Cije%20igrac%CC%8Cke%20hitno%20povuc%CC%8Cene%20sa%20trz%CC%8Cis%CC%8Cta.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI2azlkbnUxYWdiN3FtcDB0OWs4NnFwNjZsOTZvIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRGplYyUzRmlqZSBpZ3JhYyUzRmtlIGhpdG5vIHBvdnVjJTNGZW5lIHNhIHRyeiUzRmlzJTNGdGEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ0RqZWMlQ0MlOENpamUlMjBpZ3JhYyVDQyU4Q2tlJTIwaGl0bm8lMjBwb3Z1YyVDQyU4Q2VuZSUyMHNhJTIwdHJ6JUNDJThDaXMlQ0MlOEN0YS53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzUzWiIsInB1ciI6ImJsb2Jfa2V5In19--34c7499ff94c9c81177369fd5c9308f9cd27989f/Djec%CC%8Cije%20igrac%CC%8Cke%20hitno%20povuc%CC%8Cene%20sa%20trz%CC%8Cis%CC%8Cta.webp
+Completed 302 Found in 27ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 10.4ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzU5LCJwdXIiOiJibG9iX2lkIn19--c57db69c286b51ec81f86e075457e0ac7871e0a0/ukr-vojska-dron.jpg" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzYwLCJwdXIiOiJibG9iX2lkIn19--2681f26816e94e54ee4a7045e61a0e235372a92f/Beograd_404x620.jpeg" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzYyLCJwdXIiOiJibG9iX2lkIn19--165c4a3795d2747d0d1410dad32cbbca79658471/Trump_413x620.jpeg" for ::1 at 2026-01-14 17:30:48 +0100
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzU5LCJwdXIiOiJibG9iX2lkIn19--c57db69c286b51ec81f86e075457e0ac7871e0a0", "filename" => "ukr-vojska-dron"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzYwLCJwdXIiOiJibG9iX2lkIn19--2681f26816e94e54ee4a7045e61a0e235372a92f", "filename" => "Beograd_404x620"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6MzYyLCJwdXIiOiJibG9iX2lkIn19--165c4a3795d2747d0d1410dad32cbbca79658471", "filename" => "Trump_413x620"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 359 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.1ms) [0m[34mGenerated URL for file at key: 4sx6zyqj749lclnky15gvcfqz0to (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI0c3g2enlxajc0OWxjbG5reTE1Z3ZjZnF6MHRvIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidWtyLXZvanNrYS1kcm9uLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3Vrci12b2pza2EtZHJvbi5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTo0OC43NzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--3c84861e102fd86fbe2b1165f4e68cf38a41ecdd/ukr-vojska-dron.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI0c3g2enlxajc0OWxjbG5reTE1Z3ZjZnF6MHRvIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidWtyLXZvanNrYS1kcm9uLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3Vrci12b2pza2EtZHJvbi5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTo0OC43NzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--3c84861e102fd86fbe2b1165f4e68cf38a41ecdd/ukr-vojska-dron.jpg
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 360 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: 9ahb2n3ipactab1dmbyos7vjeukj (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI5YWhiMm4zaXBhY3RhYjFkbWJ5b3M3dmpldWtqIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQmVvZ3JhZF80MDR4NjIwLmpwZWdcIjsgZmlsZW5hbWUqPVVURi04JydCZW9ncmFkXzQwNHg2MjAuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjQ4Ljc3NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--34e2974f0523e696c172becc2b004fc9dd647014/Beograd_404x620.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI5YWhiMm4zaXBhY3RhYjFkbWJ5b3M3dmpldWtqIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQmVvZ3JhZF80MDR4NjIwLmpwZWdcIjsgZmlsZW5hbWUqPVVURi04JydCZW9ncmFkXzQwNHg2MjAuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjQ4Ljc3NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--34e2974f0523e696c172becc2b004fc9dd647014/Beograd_404x620.jpeg
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 362 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.1ms) [0m[34mGenerated URL for file at key: nkr8p530sd2lmiv0h6fq6d1ic3iy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJua3I4cDUzMHNkMmxtaXYwaDZmcTZkMWljM2l5IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVHJ1bXBfNDEzeDYyMC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVHJ1bXBfNDEzeDYyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzc4WiIsInB1ciI6ImJsb2Jfa2V5In19--c60f4914915bf85b0d133d3c4cbf0bca1f9dd1e1/Trump_413x620.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJua3I4cDUzMHNkMmxtaXYwaDZmcTZkMWljM2l5IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVHJ1bXBfNDEzeDYyMC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVHJ1bXBfNDEzeDYyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzc4WiIsInB1ciI6ImJsb2Jfa2V5In19--c60f4914915bf85b0d133d3c4cbf0bca1f9dd1e1/Trump_413x620.jpeg
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJxNWJkNGM1aGY2b2R2M2NueGZ4cmVwNzJxODlqIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQmlIIGplIG9kIGRhbmFzIGRpbyBHb29nbGUgc3RyZWV0IHZpZXctIFBvZ2xlZGFqdGUga2FrbyBzdmUgaXpnbGVkYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnQmlIJTIwamUlMjBvZCUyMGRhbmFzJTIwZGlvJTIwR29vZ2xlJTIwc3RyZWV0JTIwdmlldy0lMjBQb2dsZWRhanRlJTIwa2FrbyUyMHN2ZSUyMGl6Z2xlZGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjQ4Ljc0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--873797000af088e3253518bf00e45fbde325a007/BiH%20je%20od%20danas%20dio%20Google%20street%20view-%20Pogledajte%20kako%20sve%20izgleda.webp" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrNWJteXV6dGJwdzg3OGM3NmdjdXQwdXZ4ejBwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiWnZpamV6ZGEgbyBwb3ZyaWplZGVuaW0gaWdyYWMlM0ZpbWEtIENhcnRlciBpemFzJTNGYW8gaXogYm9sbmljZSUyQyBHcmFoYW0gdHJlbmlyYSUyQyBOd29yYSBwaXRhbiBvIFBBTy11LmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ1p2aWplemRhJTIwbyUyMHBvdnJpamUlQzQlOTFlbmltJTIwaWdyYWMlQ0MlOENpbWEtJTIwQ2FydGVyJTIwaXphcyVDQyU4Q2FvJTIwaXolMjBib2xuaWNlJTJDJTIwR3JhaGFtJTIwdHJlbmlyYSUyQyUyME53b3JhJTIwcGl0YW4lMjBvJTIwUEFPLXUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzQ1WiIsInB1ciI6ImJsb2Jfa2V5In19--9c078bc08ed0b69fb4e2207b7d90fefbafde8f4d/Zvijezda%20o%20povrije%C4%91enim%20igrac%CC%8Cima-%20Carter%20izas%CC%8Cao%20iz%20bolnice,%20Graham%20trenira,%20Nwora%20pitan%20o%20PAO-u.jpg" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI2azlkbnUxYWdiN3FtcDB0OWs4NnFwNjZsOTZvIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRGplYyUzRmlqZSBpZ3JhYyUzRmtlIGhpdG5vIHBvdnVjJTNGZW5lIHNhIHRyeiUzRmlzJTNGdGEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ0RqZWMlQ0MlOENpamUlMjBpZ3JhYyVDQyU4Q2tlJTIwaGl0bm8lMjBwb3Z1YyVDQyU4Q2VuZSUyMHNhJTIwdHJ6JUNDJThDaXMlQ0MlOEN0YS53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzUzWiIsInB1ciI6ImJsb2Jfa2V5In19--34c7499ff94c9c81177369fd5c9308f9cd27989f/Djec%CC%8Cije%20igrac%CC%8Cke%20hitno%20povuc%CC%8Cene%20sa%20trz%CC%8Cis%CC%8Cta.webp" for ::1 at 2026-01-14 17:30:48 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Zvijezda o povrijeđenim igračima- Carter izašao iz bolnice, Graham trenira, Nwora pitan o PAO-u"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Dječije igračke hitno povučene sa tržišta"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "BiH je od danas dio Google street view- Pogledajte kako sve izgleda"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI0c3g2enlxajc0OWxjbG5reTE1Z3ZjZnF6MHRvIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidWtyLXZvanNrYS1kcm9uLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3Vrci12b2pza2EtZHJvbi5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wMS0xNFQxNjozNTo0OC43NzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--3c84861e102fd86fbe2b1165f4e68cf38a41ecdd/ukr-vojska-dron.jpg" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI5YWhiMm4zaXBhY3RhYjFkbWJ5b3M3dmpldWtqIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQmVvZ3JhZF80MDR4NjIwLmpwZWdcIjsgZmlsZW5hbWUqPVVURi04JydCZW9ncmFkXzQwNHg2MjAuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTAxLTE0VDE2OjM1OjQ4Ljc3NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--34e2974f0523e696c172becc2b004fc9dd647014/Beograd_404x620.jpeg" for ::1 at 2026-01-14 17:30:48 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJua3I4cDUzMHNkMmxtaXYwaDZmcTZkMWljM2l5IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVHJ1bXBfNDEzeDYyMC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVHJ1bXBfNDEzeDYyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDEtMTRUMTY6MzU6NDguNzc4WiIsInB1ciI6ImJsb2Jfa2V5In19--c60f4914915bf85b0d133d3c4cbf0bca1f9dd1e1/Trump_413x620.jpeg" for ::1 at 2026-01-14 17:30:48 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Beograd_404x620"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "ukr-vojska-dron"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Trump_413x620"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/novines/5" for ::1 at 2026-01-14 17:30:48 +0100
+Processing by NovinesController#show as HTML
+  Parameters: {"id" => "5"}
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" WHERE "novines"."id" = 5 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:75:in 'NovinesController#set_novine'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 5 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:35
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:53
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 364 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:54
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 5 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:62
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /opt/homebrew/lib/ruby/gems/4.0.0/gems/actiontext-8.1.2/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 3.4ms | GC: 1.0ms)
+  [1m[36mActiveStorage::Attachment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'pictures' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:67
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered novines/show.html.erb within layouts/application (Duration: 14.6ms | GC: 2.7ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | GC: 2.7ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 2.1ms (11 queries, 4 cached) | GC: 3.4ms)
+
+
