@@ -268,7 +268,7 @@ GEM
       date
       stringio
     public_suffix (7.0.5)
-    puma (7.2.0)
+    puma (8.0.0)
       nio4r (~> 2.0)
     pusher (2.1.0)
       httpclient (~> 2.8)
@@ -497,7 +497,7 @@ DEPENDENCIES
   codecov
   cssbundling-rails
   debug
-  devise (~> 5.0)
+  devise
   ffaker
   friendly_id
   i18n
@@ -506,7 +506,7 @@ DEPENDENCIES
   jbuilder
   kalibera
   kamal
-  madmin (~> 2.3, >= 2.3.2)
+  madmin
   memory_profiler
   minitest
   minitest-reporters
@@ -517,7 +517,7 @@ DEPENDENCIES
   pg
   propshaft
   pry
-  puma (~> 7.2)
+  puma
   pusher
   rack
   rack-session

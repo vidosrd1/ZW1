@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  draw :madmin
   resources :posts
   resources :blogs
   resources :novines

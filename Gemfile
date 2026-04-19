@@ -10,7 +10,7 @@ gem 'rails_node_module_linker', '~> 0.2.1'
 gem "propshaft"
 gem 'pg'#, '~> 1.5', '>= 1.5.9'
 #gem 'sqlite3', '~> 2.5'
-gem 'puma', '~> 7.2'
+gem 'puma'#, '~> 7.2'
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
@@ -25,8 +25,8 @@ gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
 gem 'image_processing'#, '~> 1.14'
-gem 'devise', '~> 5.0'
-gem 'madmin', '~> 2.3', '>= 2.3.2'
+gem 'devise'#, '~> 5.0'
+gem 'madmin'#, '~> 2.3', '>= 2.3.2'
 gem 'pagy', '~> 9.4'
 #gem 'pagy', '~> 8.6', '>= 8.6.3'
 gem 'cssbundling-rails'#, '~> 1.4', '>= 1.4.1'
