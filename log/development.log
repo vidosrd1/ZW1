@@ -10755,3 +10755,32 @@ Started GET "/trix.css" for ::1 at 2026-04-19 11:03:20 +0200
   
 ActionController::RoutingError (No route matches [GET] "/trix.css"):
   
+Started GET "/" for ::1 at 2026-04-19 11:16:42 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mUser Load (3337.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3467.0ms | GC: 0.0ms)
+Completed 200 OK in 3512ms (Views: -1754.7ms | ActiveRecord: 5236.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-19 11:16:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/madmin" for ::1 at 2026-04-19 11:16:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/madmin"):
+  
+Started GET "/favicon.ico" for ::1 at 2026-04-19 11:16:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/madmin/Arts" for ::1 at 2026-04-19 11:17:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/madmin/Arts"):
+  
