@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
 #gem 'ruby'
-gem 'rake', '~> 13.3', '>= 13.3.1'
-gem 'rails', '~> 8.1', '>= 8.1.2'
+gem "rake"
+#gem 'rake', '~> 13.3', '>= 13.3.1'
+gem 'rails', '~> 8.1', '>= 8.1.3'
 #gem 'rails', '~> 8.0', '>= 8.0.2'
 gem 'rails_node_module_linker', '~> 0.2.1'
 #gem 'rails_node_module_linker', '~> 0.1.1'

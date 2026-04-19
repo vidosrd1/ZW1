@@ -10635,3 +10635,123 @@ Completed 200 OK in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 Completed 200 OK in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-17 14:49:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | GC: 0.0ms)
+Completed 200 OK in 94ms (Views: 49.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-17 14:49:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2026-04-17 14:49:13 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.3ms | GC: 0.8ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | GC: 0.8ms)
+Completed 200 OK in 182ms (Views: 25.4ms | ActiveRecord: 93.8ms (0 queries, 0 cached) | GC: 4.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-04-17 14:49:28 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (20.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 342ms (ActiveRecord: 20.5ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/" for ::1 at 2026-04-17 14:49:28 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.1ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-17 15:20:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (47.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 22.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mUser Load (45.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 941.6ms | GC: 0.0ms)
+Completed 200 OK in 984ms (Views: 95.4ms | ActiveRecord: 853.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-17 15:20:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/home/index" for ::1 at 2026-04-17 15:21:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | GC: 1.5ms)
+Completed 200 OK in 65ms (Views: 40.8ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 1.5ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-18 01:20:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (37.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 24.1ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  [1m[36mUser Load (75.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 504.4ms | GC: 33.2ms)
+Completed 200 OK in 602ms (Views: 184.1ms | ActiveRecord: 332.6ms (1 query, 0 cached) | GC: 33.2ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-18 01:21:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-19 11:03:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 17.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mUser Load (39.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 361.4ms | GC: 45.2ms)
+Completed 200 OK in 394ms (Views: 93.6ms | ActiveRecord: 274.1ms (1 query, 0 cached) | GC: 45.2ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-19 11:03:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
