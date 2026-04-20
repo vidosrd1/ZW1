@@ -22996,3 +22996,15 @@ Processing by Madmin::DashboardController#show as HTML
 Completed 200 OK in 48ms (Views: 35.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
 
 
+Started GET "/madmin" for ::1 at 2026-04-20 00:25:51 +0200
+Processing by Madmin::DashboardController#show as HTML
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/dashboard/show.html.erb within layouts/madmin/application
+  Rendered madmin/dashboard/show.html.erb within layouts/madmin/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 11.0ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 17.3ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 79.1ms | GC: 0.0ms)
+Completed 200 OK in 117ms (Views: 95.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
