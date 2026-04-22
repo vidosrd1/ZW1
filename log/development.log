@@ -24662,3 +24662,280 @@ Processing by ActiveStorage::DiskController#show as WEBP
 Completed 200 OK in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+[rails_node_module_linker] Middleware inserted
+Started GET "/madmin/arts" for ::1 at 2026-04-22 17:59:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (49.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by Madmin::ArtsController#index as HTML
+  [1m[36mArt Count (53.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mArt Load (1.2ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY "arts"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 49.8ms | GC: 0.8ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 20.2ms | GC: 1.6ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mBloggable Pluck (12.5ms)[0m  [1m[34mSELECT "bloggables"."novine_id" FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/models/bloggable.rb:5:in '<class:Bloggable>'
+  [1m[36mBloggable Load (0.1ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/models/bloggable.rb:6:in 'Enumerable#map'
+  [1m[36mNovine Pluck (2.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  Rendered madmin/application/_navigation.html.erb (Duration: 135.8ms | GC: 0.3ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 211.4ms | GC: 2.8ms)
+Completed 200 OK in 756ms (Views: 157.7ms | ActiveRecord: 434.2ms (5 queries, 0 cached) | GC: 23.3ms)
+
+
+Started GET "/madmin/bloggables" for ::1 at 2026-04-22 17:59:38 +0200
+Processing by Madmin::BloggablesController#index as HTML
+  [1m[36mBloggable Count (11.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bloggables" /*action='index',application='M',controller='bloggables'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mBloggable Load (0.6ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" ORDER BY "bloggables"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='bloggables'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 10.4ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 58.0ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 73.2ms | GC: 0.0ms)
+Completed 200 OK in 109ms (Views: 67.1ms | ActiveRecord: 23.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/madmin/active_storage/variant_records" for ::1 at 2026-04-22 17:59:39 +0200
+Processing by Madmin::ActiveStorage::VariantRecordsController#index as HTML
+  [1m[36mActiveStorage::VariantRecord Count (139.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_variant_records" /*action='index',application='M',controller='variant_records'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mActiveStorage::VariantRecord Load (0.7ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" ORDER BY "active_storage_variant_records"."id" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='variant_records'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 13.2ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 16.1ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 38.1ms | GC: 0.0ms)
+Completed 200 OK in 190ms (Views: 39.4ms | ActiveRecord: 141.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/madmin/bloggables" for ::1 at 2026-04-22 17:59:40 +0200
+Processing by Madmin::BloggablesController#index as HTML
+  [1m[36mBloggable Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bloggables" /*action='index',application='M',controller='bloggables'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mBloggable Load (0.4ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" ORDER BY "bloggables"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='bloggables'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 8.1ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 37.3ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 5.2ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 52.8ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 52.7ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/madmin/action_text/encrypted_rich_texts" for ::1 at 2026-04-22 17:59:50 +0200
+Processing by Madmin::ActionText::EncryptedRichTextsController#index as HTML
+  [1m[36mActionText::EncryptedRichText Count (273.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "action_text_rich_texts" /*action='index',application='M',controller='encrypted_rich_texts'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mActionText::EncryptedRichText Load (42.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" ORDER BY "action_text_rich_texts"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='encrypted_rich_texts'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 5.8ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 113.0ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 5.9ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 124.1ms | GC: 0.0ms)
+Completed 200 OK in 429ms (Views: 77.5ms | ActiveRecord: 323.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/arts" for ::1 at 2026-04-22 18:00:00 +0200
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (0.8ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (143.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (3.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 326.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 349.7ms | GC: 0.0ms)
+Completed 200 OK in 404ms (Views: 215.5ms | ActiveRecord: 152.5ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 18:00:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/arts" for ::1 at 2026-04-22 18:02:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (48.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (47.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (10.1ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (3.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (2.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 198.5ms | GC: 4.1ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 239.7ms | GC: 5.3ms)
+Completed 200 OK in 357ms (Views: 213.2ms | ActiveRecord: 119.3ms (9 queries, 0 cached) | GC: 24.7ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 18:02:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/lists/325" for ::1 at 2026-04-22 18:02:16 +0200
+Processing by ListsController#show as HTML
+  Parameters: {"id" => "325"}
+  [1m[36mList Load (9.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = 325 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:72:in 'ListsController#set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/show.html.erb within layouts/application
+  [1m[36mArt Load (13.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (8.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 325 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:39
+  [1m[36mActiveStorage::Blob Load (42.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:40
+  [1m[36mActionText::RichText Load (20.6ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 325 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:47
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 9.6ms | GC: 0.2ms)
+  Rendered lists/show.html.erb within layouts/application (Duration: 403.6ms | GC: 3.3ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 407.5ms | GC: 3.4ms)
+Completed 200 OK in 462ms (Views: 310.3ms | ActiveRecord: 109.8ms (5 queries, 0 cached) | GC: 4.5ms)
+
+
+Started GET "/arts" for ::1 at 2026-04-22 18:22:21 +0200
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (2039.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (113.1ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (133.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 397.9ms | GC: 10.7ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 407.5ms | GC: 10.7ms)
+Completed 200 OK in 2544ms (Views: 166.0ms | ActiveRecord: 3280.3ms (9 queries, 0 cached) | GC: 15.5ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 18:22:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
