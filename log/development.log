@@ -24939,6 +24939,7 @@ Started GET "/trix.css" for ::1 at 2026-04-22 18:22:24 +0200
   
 ActionController::RoutingError (No route matches [GET] "/trix.css"):
   
+<<<<<<< HEAD
 [rails_node_module_linker] Middleware inserted
 Started GET "/arts" for ::1 at 2026-04-22 20:44:22 +0200
   [1m[36mActiveRecord::SchemaMigration Load (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
@@ -26406,3 +26407,5 @@ Processing by HomeController#index as TURBO_STREAM
 Completed 200 OK in 81ms (Views: 12.4ms | ActiveRecord: 64.6ms (1 query, 0 cached) | GC: 0.4ms)
 
 
+=======
+>>>>>>> 091d77c4224209e757393c7d46ee97ac4d3ca0ea
