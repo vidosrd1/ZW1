@@ -64,7 +64,7 @@
         </time>
         <%= truncate(strip_tags(novine.body.to_s), length:180) %>
       </div>
-      <br />
+      <br>
       <div class="col-4 col-sm-4 col-md-3 col-lg-3 clearfix">
         <% if novine.image.attached? %>
           <%= link_to image_tag(novine.image,
@@ -73,7 +73,7 @@
       </div>
       <%= link_to "Edit this novine", edit_novine_path(novine) %>
     </div>
-    <br />
+    <br>
     <% end %>
   </div>
   <% if @pagy.count > @pagy.limit %>

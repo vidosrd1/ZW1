@@ -24,7 +24,7 @@
         1block inline-block font-medium text-white" %>
       </div>
     </div>
-    <br />
+    <br>
     <h3 class="flex text-4xl block
     font-medium mt-1 mb-3">
       <a href="/blogs/<%= @blog.id %>",
@@ -41,7 +41,7 @@
         <%= truncate(strip_tags(a.body.to_s), length:120) %>
         </div>
         <div class="col-4 col-sm-4 col-md-3 col-lg-3 clearfix">
-          <br />
+          <br>
         <% if a.image.attached? %>
           <%= link_to image_tag(a.image,
           style:"width:14em; heigh:auto; nav-link; nav-right;"),

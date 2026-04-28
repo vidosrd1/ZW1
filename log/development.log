@@ -24662,3 +24662,1747 @@ Processing by ActiveStorage::DiskController#show as WEBP
 Completed 200 OK in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+[rails_node_module_linker] Middleware inserted
+Started GET "/madmin/arts" for ::1 at 2026-04-22 17:59:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (49.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by Madmin::ArtsController#index as HTML
+  [1m[36mArt Count (53.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mArt Load (1.2ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY "arts"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 49.8ms | GC: 0.8ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 20.2ms | GC: 1.6ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mBloggable Pluck (12.5ms)[0m  [1m[34mSELECT "bloggables"."novine_id" FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/models/bloggable.rb:5:in '<class:Bloggable>'
+  [1m[36mBloggable Load (0.1ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/models/bloggable.rb:6:in 'Enumerable#map'
+  [1m[36mNovine Pluck (2.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  Rendered madmin/application/_navigation.html.erb (Duration: 135.8ms | GC: 0.3ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 211.4ms | GC: 2.8ms)
+Completed 200 OK in 756ms (Views: 157.7ms | ActiveRecord: 434.2ms (5 queries, 0 cached) | GC: 23.3ms)
+
+
+Started GET "/madmin/bloggables" for ::1 at 2026-04-22 17:59:38 +0200
+Processing by Madmin::BloggablesController#index as HTML
+  [1m[36mBloggable Count (11.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bloggables" /*action='index',application='M',controller='bloggables'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mBloggable Load (0.6ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" ORDER BY "bloggables"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='bloggables'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 10.4ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 58.0ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 73.2ms | GC: 0.0ms)
+Completed 200 OK in 109ms (Views: 67.1ms | ActiveRecord: 23.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/madmin/active_storage/variant_records" for ::1 at 2026-04-22 17:59:39 +0200
+Processing by Madmin::ActiveStorage::VariantRecordsController#index as HTML
+  [1m[36mActiveStorage::VariantRecord Count (139.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_variant_records" /*action='index',application='M',controller='variant_records'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mActiveStorage::VariantRecord Load (0.7ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" ORDER BY "active_storage_variant_records"."id" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='variant_records'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 13.2ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 16.1ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 38.1ms | GC: 0.0ms)
+Completed 200 OK in 190ms (Views: 39.4ms | ActiveRecord: 141.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/madmin/bloggables" for ::1 at 2026-04-22 17:59:40 +0200
+Processing by Madmin::BloggablesController#index as HTML
+  [1m[36mBloggable Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bloggables" /*action='index',application='M',controller='bloggables'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mBloggable Load (0.4ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" ORDER BY "bloggables"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='bloggables'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 8.1ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 37.3ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 5.2ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 52.8ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 52.7ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/madmin/action_text/encrypted_rich_texts" for ::1 at 2026-04-22 17:59:50 +0200
+Processing by Madmin::ActionText::EncryptedRichTextsController#index as HTML
+  [1m[36mActionText::EncryptedRichText Count (273.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "action_text_rich_texts" /*action='index',application='M',controller='encrypted_rich_texts'*/[0m
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/application/index.html.erb within layouts/madmin/application
+  [1m[36mActionText::EncryptedRichText Load (42.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" ORDER BY "action_text_rich_texts"."created_at" DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='encrypted_rich_texts'*/[0m
+  ↳ app/views/madmin/application/index.html.erb:50
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 5.8ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/integer/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/string/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/fields/date_time/_index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/index.html.erb within layouts/madmin/application (Duration: 113.0ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered madmin/application/_navigation.html.erb (Duration: 5.9ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 124.1ms | GC: 0.0ms)
+Completed 200 OK in 429ms (Views: 77.5ms | ActiveRecord: 323.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/arts" for ::1 at 2026-04-22 18:00:00 +0200
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (0.8ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (143.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (3.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 326.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 349.7ms | GC: 0.0ms)
+Completed 200 OK in 404ms (Views: 215.5ms | ActiveRecord: 152.5ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 18:00:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/arts" for ::1 at 2026-04-22 18:02:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (48.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (47.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (10.1ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (3.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (2.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 198.5ms | GC: 4.1ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 239.7ms | GC: 5.3ms)
+Completed 200 OK in 357ms (Views: 213.2ms | ActiveRecord: 119.3ms (9 queries, 0 cached) | GC: 24.7ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 18:02:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/lists/325" for ::1 at 2026-04-22 18:02:16 +0200
+Processing by ListsController#show as HTML
+  Parameters: {"id" => "325"}
+  [1m[36mList Load (9.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = 325 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:72:in 'ListsController#set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/show.html.erb within layouts/application
+  [1m[36mArt Load (13.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (8.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 325 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:39
+  [1m[36mActiveStorage::Blob Load (42.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:40
+  [1m[36mActionText::RichText Load (20.6ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 325 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='show',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/show.html.erb:47
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 9.6ms | GC: 0.2ms)
+  Rendered lists/show.html.erb within layouts/application (Duration: 403.6ms | GC: 3.3ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 407.5ms | GC: 3.4ms)
+Completed 200 OK in 462ms (Views: 310.3ms | ActiveRecord: 109.8ms (5 queries, 0 cached) | GC: 4.5ms)
+
+
+Started GET "/arts" for ::1 at 2026-04-22 18:22:21 +0200
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (2039.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (113.1ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (133.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 397.9ms | GC: 10.7ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 407.5ms | GC: 10.7ms)
+Completed 200 OK in 2544ms (Views: 166.0ms | ActiveRecord: 3280.3ms (9 queries, 0 cached) | GC: 15.5ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 18:22:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/arts" for ::1 at 2026-04-22 20:44:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (129.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (10.3ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 312.8ms | GC: 6.3ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 383.6ms | GC: 7.3ms)
+Completed 200 OK in 596ms (Views: 323.4ms | ActiveRecord: 232.1ms (9 queries, 0 cached) | GC: 43.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 20:44:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-22 20:50:18 +0200
+Started GET "/" for ::1 at 2026-04-22 20:50:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (16.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 75.2ms | GC: 16.1ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 212.6ms | GC: 63.2ms)
+Completed 200 OK in 272ms (Views: 228.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 68.1ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2026-04-22 20:50:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/arts" for ::1 at 2026-04-22 20:50:52 +0200
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (352.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (88.9ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:52
+  [1m[36mList Load (28.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 16 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 15 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 14 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 13 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 12 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 11 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."art_id" = 10 ORDER BY created_at DESC /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:67
+  Rendered arts/index.html.erb within layouts/application (Duration: 736.4ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 742.4ms | GC: 0.0ms)
+Completed 200 OK in 1171ms (Views: 184.9ms | ActiveRecord: 1029.0ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 20:50:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/home/index" for ::1 at 2026-04-22 20:50:54 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-04-22 20:51:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 20:51:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-22 22:24:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (170.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 106.2ms | GC: 56.6ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 179.2ms | GC: 57.8ms)
+Completed 200 OK in 292ms (Views: 215.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 57.8ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 22:25:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-22 22:36:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 45.5ms | GC: 26.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | GC: 26.8ms)
+Completed 200 OK in 104ms (Views: 80.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 26.8ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 22:36:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-22 22:37:43 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (47.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 44.3ms | GC: 24.2ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | GC: 24.9ms)
+Completed 200 OK in 96ms (Views: 75.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 24.9ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-22 22:37:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+[rails_node_module_linker] Middleware inserted
+Started GET "/novines" for ::1 at 2026-04-22 22:59:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (18.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by NovinesController#index as HTML
+  [1m[36mNovine Pluck (43.9ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  [1m[36mNovine Count (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:12:in 'NovinesController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/index.html.erb within layouts/application
+  [1m[36mNovine Load (11.0ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 1 OFFSET 0 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (34.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:19
+  [1m[36mActiveStorage::Blob Load (43.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:20
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:48
+  [1m[36mBloggable Pluck (17.5ms)[0m  [1m[34mSELECT "bloggables"."novine_id" FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/models/bloggable.rb:5:in '<class:Bloggable>'
+  [1m[36mBloggable Load (0.2ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/models/bloggable.rb:6:in 'Enumerable#map'
+  [1m[36mBlog Load (37.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 13 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (47.8ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 13 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 9.3ms | GC: 0.0ms)
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 12 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (6.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 12 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.1ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 410 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 11 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (4.2ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 11 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 53.8ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 409 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 10 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 10 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 2.3ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 406 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 9 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 9 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.9ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 9 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 405 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 8 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.7ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 8 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 6.5ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 404 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 7 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.8ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 7 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:66
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.8ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:70
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 403 LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:71
+  Rendered novines/index.html.erb within layouts/application (Duration: 789.5ms | GC: 5.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 2.7ms | GC: 0.0ms)
+  [1m[36mUser Load (23.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 989.3ms | GC: 5.0ms)
+Completed 200 OK in 1197ms (Views: 750.8ms | ActiveRecord: 348.5ms (39 queries, 4 cached) | GC: 35.2ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDEyLCJwdXIiOiJibG9iX2lkIn19--5ead3f72e3e8e2b55c593d1060aa9f21aba8a0f5/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg" for ::1 at 2026-04-22 22:59:10 +0200
+Started GET "/trix.css" for ::1 at 2026-04-22 22:59:10 +0200
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDEwLCJwdXIiOiJibG9iX2lkIn19--807cd5df0dd690fb6784c7a3ce158c4dfa439480/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg" for ::1 at 2026-04-22 22:59:10 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDEyLCJwdXIiOiJibG9iX2lkIn19--5ead3f72e3e8e2b55c593d1060aa9f21aba8a0f5", "filename" => "Otisak Milene Pavlović Barili i u radovima 20. bijenala -U svjetlu Milene-"}
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: 0aa8qcmi8llm942160lo44prhh0w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwYWE4cWNtaThsbG05NDIxNjBsbzQ0cHJoaDB3IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT3Rpc2FrIE1pbGVuZSBQYXZsb3ZpYyUzRiBCYXJpbGkgaSB1IHJhZG92aW1hIDIwLiBiaWplbmFsYSAtVSBzdmpldGx1IE1pbGVuZS0uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnT3Rpc2FrJTIwTWlsZW5lJTIwUGF2bG92aWMlQ0MlODElMjBCYXJpbGklMjBpJTIwdSUyMHJhZG92aW1hJTIwMjAuJTIwYmlqZW5hbGElMjAtVSUyMHN2amV0bHUlMjBNaWxlbmUtLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3BuZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjJUMjE6MDQ6MTAuNzQ5WiIsInB1ciI6ImJsb2Jfa2V5In19--e485cf2525839c0c6e7123c11f0f061e800e00e5/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwYWE4cWNtaThsbG05NDIxNjBsbzQ0cHJoaDB3IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT3Rpc2FrIE1pbGVuZSBQYXZsb3ZpYyUzRiBCYXJpbGkgaSB1IHJhZG92aW1hIDIwLiBiaWplbmFsYSAtVSBzdmpldGx1IE1pbGVuZS0uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnT3Rpc2FrJTIwTWlsZW5lJTIwUGF2bG92aWMlQ0MlODElMjBCYXJpbGklMjBpJTIwdSUyMHJhZG92aW1hJTIwMjAuJTIwYmlqZW5hbGElMjAtVSUyMHN2amV0bHUlMjBNaWxlbmUtLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3BuZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjJUMjE6MDQ6MTAuNzQ5WiIsInB1ciI6ImJsb2Jfa2V5In19--e485cf2525839c0c6e7123c11f0f061e800e00e5/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg
+Completed 302 Found in 69ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDEwLCJwdXIiOiJibG9iX2lkIn19--807cd5df0dd690fb6784c7a3ce158c4dfa439480", "filename" => "Vremenska prognoza za 7. novembar 2025. "}
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 410 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 7h30vvst45y9omw7gzevcfqifw6r (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI3aDMwdnZzdDQ1eTlvbXc3Z3pldmNmcWlmdzZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVnJlbWVuc2thIHByb2dub3phIHphIDcuIG5vdmVtYmFyIDIwMjUuIC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVnJlbWVuc2thJTIwcHJvZ25vemElMjB6YSUyMDcuJTIwbm92ZW1iYXIlMjAyMDI1LiUyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjJUMjE6MDQ6MTAuNzk4WiIsInB1ciI6ImJsb2Jfa2V5In19--ae337a3cbac81481abaf3190a7adf99c8f0cee01/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI3aDMwdnZzdDQ1eTlvbXc3Z3pldmNmcWlmdzZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVnJlbWVuc2thIHByb2dub3phIHphIDcuIG5vdmVtYmFyIDIwMjUuIC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVnJlbWVuc2thJTIwcHJvZ25vemElMjB6YSUyMDcuJTIwbm92ZW1iYXIlMjAyMDI1LiUyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjJUMjE6MDQ6MTAuNzk4WiIsInB1ciI6ImJsb2Jfa2V5In19--ae337a3cbac81481abaf3190a7adf99c8f0cee01/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg
+Completed 302 Found in 25ms (ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwYWE4cWNtaThsbG05NDIxNjBsbzQ0cHJoaDB3IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT3Rpc2FrIE1pbGVuZSBQYXZsb3ZpYyUzRiBCYXJpbGkgaSB1IHJhZG92aW1hIDIwLiBiaWplbmFsYSAtVSBzdmpldGx1IE1pbGVuZS0uanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnT3Rpc2FrJTIwTWlsZW5lJTIwUGF2bG92aWMlQ0MlODElMjBCYXJpbGklMjBpJTIwdSUyMHJhZG92aW1hJTIwMjAuJTIwYmlqZW5hbGElMjAtVSUyMHN2amV0bHUlMjBNaWxlbmUtLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3BuZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjJUMjE6MDQ6MTAuNzQ5WiIsInB1ciI6ImJsb2Jfa2V5In19--e485cf2525839c0c6e7123c11f0f061e800e00e5/Otisak%20Milene%20Pavlovic%CC%81%20Barili%20i%20u%20radovima%2020.%20bijenala%20-U%20svjetlu%20Milene-.jpg" for ::1 at 2026-04-22 22:59:10 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI3aDMwdnZzdDQ1eTlvbXc3Z3pldmNmcWlmdzZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiVnJlbWVuc2thIHByb2dub3phIHphIDcuIG5vdmVtYmFyIDIwMjUuIC5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnVnJlbWVuc2thJTIwcHJvZ25vemElMjB6YSUyMDcuJTIwbm92ZW1iYXIlMjAyMDI1LiUyMC5qcGVnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjJUMjE6MDQ6MTAuNzk4WiIsInB1ciI6ImJsb2Jfa2V5In19--ae337a3cbac81481abaf3190a7adf99c8f0cee01/Vremenska%20prognoza%20za%207.%20novembar%202025.%20.jpeg" for ::1 at 2026-04-22 22:59:10 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Otisak Milene Pavlović Barili i u radovima 20. bijenala -U svjetlu Milene-"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Vremenska prognoza za 7. novembar 2025. "}
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA5LCJwdXIiOiJibG9iX2lkIn19--30643ac137869c8dafec7f952e39d4cf68988dcc/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg" for ::1 at 2026-04-22 22:59:11 +0200
+Completed 200 OK in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 16ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA2LCJwdXIiOiJibG9iX2lkIn19--2a621f8b281a3ddea4f9c2cd8b968c305496efc0/Crna%20svadba%20-%20predrag-bjelac-830x553.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA1LCJwdXIiOiJibG9iX2lkIn19--76ec1647402e97488c8a1022edbf82bcf6b79c13/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA5LCJwdXIiOiJibG9iX2lkIn19--30643ac137869c8dafec7f952e39d4cf68988dcc", "filename" => "Nacionalni stadion i faktor Taylor Swift- Zašto kasni, koliko košta i hoće li stići na Expo-"}
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 409 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: ak8hql5wdhgxnv4pumti1zg0r4ed (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhazhocWw1d2RoZ3hudjRwdW10aTF6ZzByNGVkIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFjaW9uYWxuaSBzdGFkaW9uIGkgZmFrdG9yIFRheWxvciBTd2lmdC0gWmFzJTNGdG8ga2FzbmklMkMga29saWtvIGtvcyUzRnRhIGkgaG9jJTNGZSBsaSBzdGljJTNGaSBuYSBFeHBvLS5qcGdcIjsgZmlsZW5hbWUqPVVURi04JydOYWNpb25hbG5pJTIwc3RhZGlvbiUyMGklMjBmYWt0b3IlMjBUYXlsb3IlMjBTd2lmdC0lMjBaYXMlQ0MlOEN0byUyMGthc25pJTJDJTIwa29saWtvJTIwa29zJUNDJThDdGElMjBpJTIwaG9jJUNDJTgxZSUyMGxpJTIwc3RpYyVDQyU4MWklMjBuYSUyMEV4cG8tLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjM0N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2be6d6c3534741e7d2b0e044115f9112d96d8804/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhazhocWw1d2RoZ3hudjRwdW10aTF6ZzByNGVkIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFjaW9uYWxuaSBzdGFkaW9uIGkgZmFrdG9yIFRheWxvciBTd2lmdC0gWmFzJTNGdG8ga2FzbmklMkMga29saWtvIGtvcyUzRnRhIGkgaG9jJTNGZSBsaSBzdGljJTNGaSBuYSBFeHBvLS5qcGdcIjsgZmlsZW5hbWUqPVVURi04JydOYWNpb25hbG5pJTIwc3RhZGlvbiUyMGklMjBmYWt0b3IlMjBUYXlsb3IlMjBTd2lmdC0lMjBaYXMlQ0MlOEN0byUyMGthc25pJTJDJTIwa29saWtvJTIwa29zJUNDJThDdGElMjBpJTIwaG9jJUNDJTgxZSUyMGxpJTIwc3RpYyVDQyU4MWklMjBuYSUyMEV4cG8tLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjM0N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2be6d6c3534741e7d2b0e044115f9112d96d8804/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg
+Completed 302 Found in 28ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA2LCJwdXIiOiJibG9iX2lkIn19--2a621f8b281a3ddea4f9c2cd8b968c305496efc0", "filename" => "Crna svadba - predrag-bjelac-830x553"}
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDA0LCJwdXIiOiJibG9iX2lkIn19--37c411f385ce60d67920a0b8ec0fe9d3e852104b/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA1LCJwdXIiOiJibG9iX2lkIn19--76ec1647402e97488c8a1022edbf82bcf6b79c13", "filename" => "Preminula poznata glumica, tri puta nominovana za Oskara"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 406 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: v65gap3djgbc6vgr74nix11iv3m9 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ2NjVnYXAzZGpnYmM2dmdyNzRuaXgxMWl2M205IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQ3JuYSBzdmFkYmEgLSBwcmVkcmFnLWJqZWxhYy04MzB4NTUzLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydDcm5hJTIwc3ZhZGJhJTIwLSUyMHByZWRyYWctYmplbGFjLTgzMHg1NTMud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjM5NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--36def0eb4083f6a42984cfc9f5145984c9e61734/Crna%20svadba%20-%20predrag-bjelac-830x553.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ2NjVnYXAzZGpnYmM2dmdyNzRuaXgxMWl2M205IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQ3JuYSBzdmFkYmEgLSBwcmVkcmFnLWJqZWxhYy04MzB4NTUzLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydDcm5hJTIwc3ZhZGJhJTIwLSUyMHByZWRyYWctYmplbGFjLTgzMHg1NTMud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjM5NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--36def0eb4083f6a42984cfc9f5145984c9e61734/Crna%20svadba%20-%20predrag-bjelac-830x553.webp
+Completed 302 Found in 29ms (ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDAzLCJwdXIiOiJibG9iX2lkIn19--8e5f916454f991480233a442f45bf37b88f3e0e7/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp" for ::1 at 2026-04-22 22:59:11 +0200
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 405 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: u57cojl0xvado54p03cwnl63g7ei (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1NTdjb2psMHh2YWRvNTRwMDNjd25sNjNnN2VpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUHJlbWludWxhIHBvem5hdGEgZ2x1bWljYSUyQyB0cmkgcHV0YSBub21pbm92YW5hIHphIE9za2FyYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnUHJlbWludWxhJTIwcG96bmF0YSUyMGdsdW1pY2ElMkMlMjB0cmklMjBwdXRhJTIwbm9taW5vdmFuYSUyMHphJTIwT3NrYXJhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yMlQyMTowNDoxMS40MzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--159489fa91661f04eef1062802a3507b617017ae/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1NTdjb2psMHh2YWRvNTRwMDNjd25sNjNnN2VpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUHJlbWludWxhIHBvem5hdGEgZ2x1bWljYSUyQyB0cmkgcHV0YSBub21pbm92YW5hIHphIE9za2FyYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnUHJlbWludWxhJTIwcG96bmF0YSUyMGdsdW1pY2ElMkMlMjB0cmklMjBwdXRhJTIwbm9taW5vdmFuYSUyMHphJTIwT3NrYXJhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yMlQyMTowNDoxMS40MzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--159489fa91661f04eef1062802a3507b617017ae/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp
+Completed 302 Found in 43ms (ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDA0LCJwdXIiOiJibG9iX2lkIn19--37c411f385ce60d67920a0b8ec0fe9d3e852104b", "filename" => "Od Nevesinjske puške do Solunskog fronta"}
+Processing by ActiveStorage::Blobs::RedirectController#show as WEBP
+  Parameters: {"signed_id" => "eyJfcmFpbHMiOnsiZGF0YSI6NDAzLCJwdXIiOiJibG9iX2lkIn19--8e5f916454f991480233a442f45bf37b88f3e0e7", "filename" => "Najmanje 8 osoba poginulo u sudaru vozova"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 404 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: ed6ul8glw9i4o2kit8fehcpw3gl6 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJlZDZ1bDhnbHc5aTRvMmtpdDhmZWhjcHczZ2w2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT2QgTmV2ZXNpbmpza2UgcHVzJTNGa2UgZG8gU29sdW5za29nIGZyb250YS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnT2QlMjBOZXZlc2luanNrZSUyMHB1cyVDQyU4Q2tlJTIwZG8lMjBTb2x1bnNrb2clMjBmcm9udGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjQ4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d822f7730899ca7c55b957afb29826612e9c580d/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJlZDZ1bDhnbHc5aTRvMmtpdDhmZWhjcHczZ2w2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT2QgTmV2ZXNpbmpza2UgcHVzJTNGa2UgZG8gU29sdW5za29nIGZyb250YS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnT2QlMjBOZXZlc2luanNrZSUyMHB1cyVDQyU4Q2tlJTIwZG8lMjBTb2x1bnNrb2clMjBmcm9udGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjQ4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d822f7730899ca7c55b957afb29826612e9c580d/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp
+Completed 302 Found in 13ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 403 LIMIT 1 /*action='show',application='M',controller='redirect'*/[0m
+[36m  Disk Storage (3.3ms) [0m[34mGenerated URL for file at key: fnm5fitsp5bw2ex5nc0q2cqn2i7q (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJmbm01Zml0c3A1YncyZXg1bmMwcTJjcW4yaTdxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFqbWFuamUgOCBvc29iYSBwb2dpbnVsbyB1IHN1ZGFydSB2b3pvdmEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ05ham1hbmplJTIwOCUyMG9zb2JhJTIwcG9naW51bG8lMjB1JTIwc3VkYXJ1JTIwdm96b3ZhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yMlQyMTowNDoxMS41MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--821f0ddd9ccb6ee1404eede28b0ec095c5665d11/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJmbm01Zml0c3A1YncyZXg1bmMwcTJjcW4yaTdxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFqbWFuamUgOCBvc29iYSBwb2dpbnVsbyB1IHN1ZGFydSB2b3pvdmEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ05ham1hbmplJTIwOCUyMG9zb2JhJTIwcG9naW51bG8lMjB1JTIwc3VkYXJ1JTIwdm96b3ZhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yMlQyMTowNDoxMS41MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--821f0ddd9ccb6ee1404eede28b0ec095c5665d11/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp
+Completed 302 Found in 23ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ2NjVnYXAzZGpnYmM2dmdyNzRuaXgxMWl2M205IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQ3JuYSBzdmFkYmEgLSBwcmVkcmFnLWJqZWxhYy04MzB4NTUzLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydDcm5hJTIwc3ZhZGJhJTIwLSUyMHByZWRyYWctYmplbGFjLTgzMHg1NTMud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjM5NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--36def0eb4083f6a42984cfc9f5145984c9e61734/Crna%20svadba%20-%20predrag-bjelac-830x553.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJlZDZ1bDhnbHc5aTRvMmtpdDhmZWhjcHczZ2w2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiT2QgTmV2ZXNpbmpza2UgcHVzJTNGa2UgZG8gU29sdW5za29nIGZyb250YS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnT2QlMjBOZXZlc2luanNrZSUyMHB1cyVDQyU4Q2tlJTIwZG8lMjBTb2x1bnNrb2clMjBmcm9udGEud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjQ4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d822f7730899ca7c55b957afb29826612e9c580d/Od%20Nevesinjske%20pus%CC%8Cke%20do%20Solunskog%20fronta.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhazhocWw1d2RoZ3hudjRwdW10aTF6ZzByNGVkIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFjaW9uYWxuaSBzdGFkaW9uIGkgZmFrdG9yIFRheWxvciBTd2lmdC0gWmFzJTNGdG8ga2FzbmklMkMga29saWtvIGtvcyUzRnRhIGkgaG9jJTNGZSBsaSBzdGljJTNGaSBuYSBFeHBvLS5qcGdcIjsgZmlsZW5hbWUqPVVURi04JydOYWNpb25hbG5pJTIwc3RhZGlvbiUyMGklMjBmYWt0b3IlMjBUYXlsb3IlMjBTd2lmdC0lMjBaYXMlQ0MlOEN0byUyMGthc25pJTJDJTIwa29saWtvJTIwa29zJUNDJThDdGElMjBpJTIwaG9jJUNDJTgxZSUyMGxpJTIwc3RpYyVDQyU4MWklMjBuYSUyMEV4cG8tLmpwZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTIyVDIxOjA0OjExLjM0N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2be6d6c3534741e7d2b0e044115f9112d96d8804/Nacionalni%20stadion%20i%20faktor%20Taylor%20Swift-%20Zas%CC%8Cto%20kasni,%20koliko%20kos%CC%8Cta%20i%20hoc%CC%81e%20li%20stic%CC%81i%20na%20Expo-.jpg" for ::1 at 2026-04-22 22:59:11 +0200
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Crna svadba - predrag-bjelac-830x553"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Od Nevesinjske puške do Solunskog fronta"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Nacionalni stadion i faktor Taylor Swift- Zašto kasni, koliko košta i hoće li stići na Expo-"}
+Completed 200 OK in 17ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Completed 200 OK in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Completed 200 OK in 17ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1NTdjb2psMHh2YWRvNTRwMDNjd25sNjNnN2VpIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUHJlbWludWxhIHBvem5hdGEgZ2x1bWljYSUyQyB0cmkgcHV0YSBub21pbm92YW5hIHphIE9za2FyYS53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcnUHJlbWludWxhJTIwcG96bmF0YSUyMGdsdW1pY2ElMkMlMjB0cmklMjBwdXRhJTIwbm9taW5vdmFuYSUyMHphJTIwT3NrYXJhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yMlQyMTowNDoxMS40MzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--159489fa91661f04eef1062802a3507b617017ae/Preminula%20poznata%20glumica,%20tri%20puta%20nominovana%20za%20Oskara.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJmbm01Zml0c3A1YncyZXg1bmMwcTJjcW4yaTdxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiTmFqbWFuamUgOCBvc29iYSBwb2dpbnVsbyB1IHN1ZGFydSB2b3pvdmEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ05ham1hbmplJTIwOCUyMG9zb2JhJTIwcG9naW51bG8lMjB1JTIwc3VkYXJ1JTIwdm96b3ZhLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yMlQyMTowNDoxMS41MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--821f0ddd9ccb6ee1404eede28b0ec095c5665d11/Najmanje%208%20osoba%20poginulo%20u%20sudaru%20vozova.webp" for ::1 at 2026-04-22 22:59:11 +0200
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Preminula poznata glumica, tri puta nominovana za Oskara"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Najmanje 8 osoba poginulo u sudaru vozova"}
+Completed 200 OK in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Completed 200 OK in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/novines/13" for ::1 at 2026-04-22 22:59:12 +0200
+Processing by NovinesController#show as HTML
+  Parameters: {"id" => "13"}
+  [1m[36mNovine Load (0.6ms)[0m  [1m[34mSELECT "novines".* FROM "novines" WHERE "novines"."id" = 13 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:75:in 'NovinesController#set_novine'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/show.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" INNER JOIN "bloggables" ON "blogs"."id" = "bloggables"."blog_id" WHERE "bloggables"."novine_id" = 13 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:35
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:53
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 412 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:54
+  [1m[36mActionText::RichText Load (0.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 13 AND "action_text_rich_texts"."record_type" = 'Novine' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:62
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 2.8ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'pictures' LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:67
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'Novine' AND "active_storage_attachments"."name" = 'pictures' /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:68
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 413 LIMIT 1 /*action='show',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/show.html.erb:69
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered novines/show.html.erb within layouts/application (Duration: 121.3ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  ↳ app/controllers/novines_controller.rb:86:in 'NovinesController#current_user'
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 134.5ms | GC: 0.0ms)
+Completed 200 OK in 157ms (Views: 132.4ms | ActiveRecord: 5.9ms (13 queries, 4 cached) | GC: 0.0ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-23 21:39:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (18.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 42.0ms | GC: 15.4ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | GC: 18.3ms)
+Completed 200 OK in 124ms (Views: 84.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 30.8ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-23 21:39:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2026-04-23 21:39:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.5ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 58.4ms | GC: 1.3ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 63.8ms | GC: 1.3ms)
+Completed 200 OK in 3096ms (Views: 76.7ms | ActiveRecord: 1437.2ms (0 queries, 0 cached) | GC: 21.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-04-23 21:40:09 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (1754.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 2311ms (ActiveRecord: 1754.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2026-04-23 21:40:11 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/home/index" for ::1 at 2026-04-23 21:43:06 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (1249.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1289.0ms | GC: 2.0ms)
+Completed 200 OK in 1297ms (Views: 41.2ms | ActiveRecord: 1249.7ms (1 query, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/posts" for ::1 at 2026-04-23 21:48:07 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Count (1552.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:6:in 'PostsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (24.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:43
+  [1m[36mActionText::RichText Load (88.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Post' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:50
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 62.2ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (112.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Post' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:54
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:59
+  Rendered posts/index.html.erb within layouts/application (Duration: 785.7ms | GC: 0.5ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 790.1ms | GC: 0.5ms)
+Completed 200 OK in 2521ms (Views: 277.6ms | ActiveRecord: 2074.4ms (5 queries, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/lists" for ::1 at 2026-04-23 21:48:50 +0200
+Processing by ListsController#index as HTML
+  [1m[36mList Count (354.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "lists" /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:7:in 'ListsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (271.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:39
+  [1m[36mActiveStorage::Attachment Load (43.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 326 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (150.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 349 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mArt Load (86.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (40.6ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 326 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 7.2ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 325 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 325 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.6ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 324 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 347 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.2ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 324 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 323 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 346 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 323 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 11.2ms | GC: 5.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 322 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 345 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (10.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 322 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 19.6ms | GC: 9.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 321 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 344 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 321 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 7.1ms | GC: 2.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 320 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 343 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 320 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 2.2ms | GC: 0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:72
+  Rendered lists/index.html.erb within layouts/application (Duration: 1229.9ms | GC: 129.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1235.9ms | GC: 129.0ms)
+Completed 200 OK in 1647ms (Views: 601.3ms | ActiveRecord: 1013.9ms (31 queries, 6 cached) | GC: 129.0ms)
+
+
+Started GET "/posts" for ::1 at 2026-04-23 21:59:36 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Count (339.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:6:in 'PostsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (64.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:43
+  [1m[36mActionText::RichText Load (275.7ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Post' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:50
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 112.0ms | GC: 10.3ms)
+  [1m[36mActiveStorage::Attachment Load (3.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Post' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:54
+  [1m[36mUser Load (24.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:59
+  Rendered posts/index.html.erb within layouts/application (Duration: 616.6ms | GC: 12.1ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 629.3ms | GC: 12.1ms)
+Completed 200 OK in 1067ms (Views: 267.1ms | ActiveRecord: 750.5ms (5 queries, 0 cached) | GC: 18.4ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-26 12:27:37 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (165.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 21.6ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | GC: 0.0ms)
+Completed 200 OK in 111ms (Views: 70.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-26 12:27:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2026-04-26 12:27:50 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.0ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 33.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | GC: 0.0ms)
+Completed 200 OK in 1986ms (Views: 48.4ms | ActiveRecord: 1651.1ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-04-26 12:28:02 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (328.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 736ms (ActiveRecord: 328.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-04-26 12:28:03 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-27 21:42:08 +0200
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:960:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:972:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:719:in 'block (2 levels) in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1290:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#attempt_configure_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:716:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:715:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:830:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:817:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:839:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1056:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1055:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/quoting.rb:75:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1180:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1157:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:61:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:463:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/migration.rb:1440:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.1.3) lib/active_record/migration.rb:1288:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.1.3) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.1.3) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.3) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.3) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.3.0) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.3.0) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+request_store (1.7.0) lib/request_store/middleware.rb:19:in 'RequestStore::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+propshaft (1.3.2) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rails_node_module_linker (0.2.1) lib/rails_node_module_linker/middleware.rb:41:in 'RailsNodeModuleLinker::Middleware#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.0) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.0) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.0) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.0) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.0) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.0) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.0) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg-1.6.3-arm64 (darwin) lib/pg/connection.rb:944:in 'PG::Connection.connect_start'
+pg-1.6.3-arm64 (darwin) lib/pg/connection.rb:944:in 'PG::Connection.connect_to_hosts'
+pg-1.6.3-arm64 (darwin) lib/pg/connection.rb:871:in 'PG::Connection.new'
+pg-1.6.3-arm64 (darwin) lib/pg.rb:88:in 'PG.connect'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:960:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:972:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:719:in 'block (2 levels) in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1290:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#attempt_configure_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:716:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:715:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:830:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:817:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:839:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1056:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1055:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/quoting.rb:75:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1180:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1157:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:61:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:463:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/migration.rb:1440:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.1.3) lib/active_record/migration.rb:1288:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.1.3) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.1.3) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.3) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.3) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.3.0) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.3.0) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+request_store (1.7.0) lib/request_store/middleware.rb:19:in 'RequestStore::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+propshaft (1.3.2) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rails_node_module_linker (0.2.1) lib/rails_node_module_linker/middleware.rb:41:in 'RailsNodeModuleLinker::Middleware#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.0) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.0) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.0) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.0) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.0) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.0) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.0) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/" for ::1 at 2026-04-27 21:42:19 +0200
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:960:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:972:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:719:in 'block (2 levels) in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1290:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#attempt_configure_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:716:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:715:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:830:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:817:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:839:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1056:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1055:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/quoting.rb:75:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1180:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1157:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:61:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:463:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/migration.rb:1440:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.1.3) lib/active_record/migration.rb:1288:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.1.3) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.1.3) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.3) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.3) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.3.0) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.3.0) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+request_store (1.7.0) lib/request_store/middleware.rb:19:in 'RequestStore::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+propshaft (1.3.2) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rails_node_module_linker (0.2.1) lib/rails_node_module_linker/middleware.rb:41:in 'RailsNodeModuleLinker::Middleware#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.0) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.0) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.0) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.0) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.0) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.0) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.0) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg-1.6.3-arm64 (darwin) lib/pg/connection.rb:944:in 'PG::Connection.connect_start'
+pg-1.6.3-arm64 (darwin) lib/pg/connection.rb:944:in 'PG::Connection.connect_to_hosts'
+pg-1.6.3-arm64 (darwin) lib/pg/connection.rb:871:in 'PG::Connection.new'
+pg-1.6.3-arm64 (darwin) lib/pg.rb:88:in 'PG.connect'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:960:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:972:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:719:in 'block (2 levels) in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1290:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#attempt_configure_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:716:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:715:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:830:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:817:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:839:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1056:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.1.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract_adapter.rb:1055:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/quoting.rb:75:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1180:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.1.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1157:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:61:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:463:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.1.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.1.3) lib/active_record/migration.rb:1440:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.1.3) lib/active_record/migration.rb:1288:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.1.3) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.1.3) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.1.3) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.3) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.3) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.3.0) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.3.0) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+request_store (1.7.0) lib/request_store/middleware.rb:19:in 'RequestStore::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+propshaft (1.3.2) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rails_node_module_linker (0.2.1) lib/rails_node_module_linker/middleware.rb:41:in 'RailsNodeModuleLinker::Middleware#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.0) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.0) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.0) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.0) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.0) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.0) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.0) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+[rails_node_module_linker] Middleware inserted
+[rails_node_module_linker] Middleware inserted
+Started GET "/home/index" for ::1 at 2026-04-27 22:19:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 22.5ms | GC: 5.7ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 183.7ms | GC: 51.6ms)
+Completed 200 OK in 212ms (Views: 142.3ms | ActiveRecord: 46.9ms (1 query, 0 cached) | GC: 51.6ms)
+
+
+Started GET "/blogs" for ::1 at 2026-04-27 22:20:04 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Count (188.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:52
+  [1m[36mBloggable Pluck (19.9ms)[0m  [1m[34mSELECT "bloggables"."novine_id" FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/models/bloggable.rb:5:in '<class:Bloggable>'
+  [1m[36mBloggable Load (0.3ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/models/bloggable.rb:6:in 'Enumerable#map'
+  [1m[36mNovine Pluck (10.0ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  [1m[36mNovine Load (8.7ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 1 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 2 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (5.0ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 3 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (1.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 4 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 5 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.6ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 6 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 7 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  Rendered blogs/index.html.erb within layouts/application (Duration: 175.7ms | GC: 1.6ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 179.6ms | GC: 1.6ms)
+Completed 200 OK in 392ms (Views: 141.3ms | ActiveRecord: 240.6ms (13 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/blogs" for ::1 at 2026-04-27 22:20:05 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:52
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 1 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 2 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.5ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 3 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 4 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 5 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 6 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  [1m[36mNovine Load (0.4ms)[0m  [1m[34mSELECT "novines".* FROM "novines" INNER JOIN "bloggables" ON "novines"."id" = "bloggables"."novine_id" WHERE "bloggables"."blog_id" = 7 ORDER BY created_at DESC /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:68
+  Rendered blogs/index.html.erb within layouts/application (Duration: 26.3ms | GC: 0.7ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | GC: 0.7ms)
+Completed 200 OK in 36ms (Views: 27.0ms | ActiveRecord: 3.9ms (10 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/posts" for ::1 at 2026-04-27 22:20:08 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Count (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:6:in 'PostsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:43
+  [1m[36mActionText::RichText Load (8.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Post' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:50
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 63.8ms | GC: 17.5ms)
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Post' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:54
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:59
+  Rendered posts/index.html.erb within layouts/application (Duration: 176.4ms | GC: 17.5ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 183.2ms | GC: 17.5ms)
+Completed 200 OK in 201ms (Views: 168.4ms | ActiveRecord: 18.4ms (5 queries, 0 cached) | GC: 17.5ms)
+
+
+Started GET "/posts" for ::1 at 2026-04-27 22:20:08 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:6:in 'PostsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:43
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Post' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:50
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 24.6ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Post' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:54
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:59
+  Rendered posts/index.html.erb within layouts/application (Duration: 57.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | GC: 0.0ms)
+Completed 200 OK in 69ms (Views: 59.8ms | ActiveRecord: 1.4ms (5 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2026-04-27 22:20:13 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:6:in 'PostsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:43
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 1 AND "action_text_rich_texts"."record_type" = 'Post' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:50
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 3.2ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/attachables/_remote_image.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 19.1ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'Post' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:54
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:59
+  Rendered posts/index.html.erb within layouts/application (Duration: 39.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 1.6ms (5 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lists" for ::1 at 2026-04-27 22:20:19 +0200
+Processing by ListsController#index as HTML
+  [1m[36mList Count (31.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "lists" /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:7:in 'ListsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:39
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 326 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (6.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 349 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mArt Load (9.3ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 326 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 18.2ms | GC: 15.7ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 325 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 348 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 325 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 324 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 347 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.3ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 324 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 323 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 346 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.5ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 323 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.2ms | GC: 0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 322 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 345 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.2ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 322 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 2.0ms | GC: 0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 321 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 344 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 321 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.5ms | GC: 0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 320 AND "active_storage_attachments"."record_type" = 'List' AND "active_storage_attachments"."name" = 'image' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:46
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 343 LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:47
+  [1m[36mCACHE Art Load (0.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts" WHERE "arts"."id" = 16 LIMIT 1[0m
+  ↳ app/views/lists/index.html.erb:56
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 320 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:59
+  Rendered /Users/vidosrd/.asdf/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/actiontext-8.1.3/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 2.0ms | GC: 0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/index.html.erb:72
+  Rendered lists/index.html.erb within layouts/application (Duration: 377.4ms | GC: 92.9ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 383.7ms | GC: 92.9ms)
+Completed 200 OK in 439ms (Views: 359.3ms | ActiveRecord: 59.5ms (31 queries, 6 cached) | GC: 92.9ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-27 22:20:20 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6cDNzYjgwYTRiZ2JoZnRneHAzcG5qZDU4eXhlIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncm95LWxpY2h0ZW5zdGVpbi1hcy1pLW9wZW5lZC1maXJlLTE5NjQtNC53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjdUMjA6MjM6MjEuOTgzWiIsInB1ciI6ImJsb2Jfa2V5In19--6e0410219c4035b09a836720cd05c8d863570629/roy-lichtenstein-as-i-opened-fire-1964-4.webp" for ::1 at 2026-04-27 22:20:20 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJpM2xhaDV2bDY5Nzg0OHlib2E5ZjFiYzZ5ZHl1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiYW5keS13YXJob2wtY2FtcGJlbGxzLXNvdXAtY2Fucy0xOTYyLndlYnBcIjsgZmlsZW5hbWUqPVVURi04JydhbmR5LXdhcmhvbC1jYW1wYmVsbHMtc291cC1jYW5zLTE5NjIud2VicCIsImNvbnRlbnRfdHlwZSI6ImltYWdlL3dlYnAiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTI3VDIwOjIzOjIyLjUwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6a287656e430ec7333a72997d7af2ae0393750b7/andy-warhol-campbells-soup-cans-1962.webp" for ::1 at 2026-04-27 22:20:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "roy-lichtenstein-as-i-opened-fire-1964-4"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "andy-warhol-campbells-soup-cans-1962"}
+Completed 304 Not Modified in 14ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 304 Not Modified in 12ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIwbng5dmx2Zm9mMHdmbG4wd3g4ZG9yNjVmeGE2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiUGV0ZXIgQmxha2UlMkMgT24gdGhlIEJhbGNvbnklMkMgMTk1Ny5qcGVnXCI7IGZpbGVuYW1lKj1VVEYtOCcnUGV0ZXIlMjBCbGFrZSUyQyUyME9uJTIwdGhlJTIwQmFsY29ueSUyQyUyMDE5NTcuanBlZyIsImNvbnRlbnRfdHlwZSI6ImltYWdlL2pwZWciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI2LTA0LTI3VDIwOjIzOjIyLjAxMFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2276b14366cd6d256ee85ac9773dc0a459aa6180/Peter%20Blake,%20On%20the%20Balcony,%201957.jpeg" for ::1 at 2026-04-27 22:20:20 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJzY3pnMGFqcDd1c2xudTJ3OTE0N2ViZ2ZlbGZyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicm95LWxpY2h0ZW5zdGVpbi13aGFhbS0xOTYzLXBvc3Rtb2Rlcm4tYXJ0LTEud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ3JveS1saWNodGVuc3RlaW4td2hhYW0tMTk2My1wb3N0bW9kZXJuLWFydC0xLndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yN1QyMDoyMzoyMi4wNjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--6f515a1452c42aef4c7479bb489e037f13cbbc8d/roy-lichtenstein-whaam-1963-postmodern-art-1.webp" for ::1 at 2026-04-27 22:20:20 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "Peter Blake, On the Balcony, 1957"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "roy-lichtenstein-whaam-1963-postmodern-art-1"}
+Completed 304 Not Modified in 27ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 304 Not Modified in 16ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3cmd0dXVtdXd1YnYwZnFrbXE1M2U0bmptZGUyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiamFzcGVyLWpvaG5zLWFtZXJpY2FuLWZsYWctZTE1OTY2NzkyODQ1Njgud2VicFwiOyBmaWxlbmFtZSo9VVRGLTgnJ2phc3Blci1qb2hucy1hbWVyaWNhbi1mbGFnLWUxNTk2Njc5Mjg0NTY4LndlYnAiLCJjb250ZW50X3R5cGUiOiJpbWFnZS93ZWJwIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yN1QyMDoyMzoyMi4wMzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--51780e92231720a63686b6abd5776aca5a4168f4/jasper-johns-american-flag-e1596679284568.webp" for ::1 at 2026-04-27 22:20:20 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrMzRsYmlkczVqcDdlY3JleXU0M3I0OTFnMjVnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiRTdGREM4NjktOTU5MS00NzA0LUEyMkQtRUQyREJDNkVCQkE1XzFfMjAxX2EuanBlZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ0U3RkRDODY5LTk1OTEtNDcwNC1BMjJELUVEMkRCQzZFQkJBNV8xXzIwMV9hLmpwZWciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNi0wNC0yN1QyMDoyMzoyMi4xODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--2242137fda92810c32885f9e36ecbf6ca59c5974/E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a.jpeg" for ::1 at 2026-04-27 22:20:20 +0200
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJiOHk0YTE4ZG14Ym1zaXVsNmJ0aWpqb3JpYmRiIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwXCI7IGZpbGVuYW1lKj1VVEYtOCcncmljaGFyZC1oYW1pbHRvbi1qdXN0LXdoYXQtaXMtaXQtMTk1Ni53ZWJwIiwiY29udGVudF90eXBlIjoiaW1hZ2Uvd2VicCIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjYtMDQtMjdUMjA6MjM6MjIuMTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--8390bbba7ee8ee405573d092c1be27030163552a/richard-hamilton-just-what-is-it-1956.webp" for ::1 at 2026-04-27 22:20:20 +0200
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "E7FDC869-9591-4704-A22D-ED2DBC6EBBA5_1_201_a"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "jasper-johns-american-flag-e1596679284568"}
+Processing by ActiveStorage::DiskController#show as WEBP
+  Parameters: {"encoded_key" => "[FILTERED]", "filename" => "richard-hamilton-just-what-is-it-1956"}
+Completed 304 Not Modified in 24ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 304 Not Modified in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 304 Not Modified in 19ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[rails_node_module_linker] Middleware inserted
+Started GET "/lists/3/edit" for ::1 at 2026-04-28 11:51:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (27.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by ListsController#edit as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mList Load (9.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = 3 LIMIT 1 /*action='edit',application='M',controller='lists'*/[0m
+  ↳ app/controllers/lists_controller.rb:72:in 'ListsController#set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/edit.html.erb within layouts/application
+  [1m[36mArt Load (14.5ms)[0m  [1m[34mSELECT "arts".* FROM "arts" /*action='edit',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/_form.html.erb:36:in 'Enumerable#map'
+  [1m[36mActionText::RichText Load (27.7ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = 3 AND "action_text_rich_texts"."record_type" = 'List' AND "action_text_rich_texts"."name" = 'body' LIMIT 1 /*action='edit',application='M',controller='lists'*/[0m
+  ↳ app/views/lists/_form.html.erb:42
+  Rendered lists/_form.html.erb (Duration: 238.8ms | GC: 2.2ms)
+  Rendered lists/edit.html.erb within layouts/application (Duration: 246.1ms | GC: 2.2ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 327.1ms | GC: 2.2ms)
+Completed 200 OK in 783ms (Views: 294.6ms | ActiveRecord: 363.8ms (3 queries, 0 cached) | GC: 7.2ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-28 11:51:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/" for ::1 at 2026-04-28 11:51:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 29.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 102.3ms | GC: 0.0ms)
+Completed 200 OK in 150ms (Views: 121.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-28 11:51:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/terms" for ::1 at 2026-04-28 11:51:47 +0200
+Processing by HomeController#terms as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/terms.html.erb within layouts/application
+  Rendered home/terms.html.erb within layouts/application (Duration: 12.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 22.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[rails_node_module_linker] Middleware inserted
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-28 18:07:25 +0200
+Started GET "/" for ::1 at 2026-04-28 18:07:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (82.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 49.1ms | GC: 0.8ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 130.8ms | GC: 0.8ms)
+Completed 200 OK in 181ms (Views: 144.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/" for ::1 at 2026-04-28 18:07:46 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 35.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-28 18:07:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/posts/new" for ::1 at 2026-04-28 18:07:51 +0200
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 139.2ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 141.4ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 147.4ms | GC: 0.0ms)
+Completed 200 OK in 1649ms (Views: 126.9ms | ActiveRecord: 574.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-28 18:07:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2026-04-28 18:07:58 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.0ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.6ms | GC: 0.4ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | GC: 0.4ms)
+Completed 200 OK in 519ms (Views: 31.7ms | ActiveRecord: 428.9ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-04-28 18:08:13 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+Started GET "/privacy" for ::1 at 2026-04-28 18:08:13 +0200
+Processing by HomeController#privacy as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/privacy.html.erb within layouts/application
+  Rendered home/privacy.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 14.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mUser Load (1983.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 2427ms (ActiveRecord: 1983.2ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/" for ::1 at 2026-04-28 18:08:15 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (64.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | GC: 0.4ms)
+Completed 200 OK in 81ms (Views: 12.4ms | ActiveRecord: 64.6ms (1 query, 0 cached) | GC: 0.4ms)
+
+
