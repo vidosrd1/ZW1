@@ -26409,3 +26409,56 @@ Completed 200 OK in 81ms (Views: 12.4ms | ActiveRecord: 64.6ms (1 query, 0 cache
 
 =======
 >>>>>>> 091d77c4224209e757393c7d46ee97ac4d3ca0ea
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-04-29 12:28:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (18.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 100.0ms | GC: 52.6ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 141.5ms | GC: 55.5ms)
+Completed 200 OK in 194ms (Views: 149.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 55.5ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-04-29 12:28:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2026-04-29 12:29:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.8ms | GC: 1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 50.1ms | GC: 1.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | GC: 1.0ms)
+Completed 200 OK in 1196ms (Views: 79.0ms | ActiveRecord: 624.5ms (0 queries, 0 cached) | GC: 58.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-04-29 12:29:14 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "1"}, "commit" => "Log in"}
+  [1m[36mUser Load (116.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='M',controller='sessions'*/[0m
+  [1m[36mUser Update (332.9ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = '2026-04-29 10:29:15.757274', "updated_at" = '2026-04-29 10:29:15.759262' WHERE "users"."id" = 1 /*action='create',application='M',controller='sessions'*/[0m
+  [1m[36mTRANSACTION (43.3ms)[0m  [1m[35mCOMMIT /*action='create',application='M',controller='sessions'*/[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 1366ms (ActiveRecord: 492.0ms (2 queries, 0 cached) | GC: 17.4ms)
+
+
+Started GET "/" for ::1 at 2026-04-29 12:29:16 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | GC: 3.0ms)
+Completed 200 OK in 26ms (Views: 14.5ms | ActiveRecord: 3.4ms (1 query, 0 cached) | GC: 3.0ms)
+
+
