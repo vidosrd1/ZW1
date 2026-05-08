@@ -3,7 +3,7 @@
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
-    <div class="flex justify-between items-center">
+    <div class="1flex justify-between items-center">
       <% if user_signed_in? %>
         <%= link_to "Edit this art", edit_art_path(@art),
         class: "bg-green-700 mt-1 rounded-lg py-2 px-3
@@ -51,8 +51,8 @@
       <br />
       <% end %>
     </div>
-    <br />
-    <div class="flex justify-between items-center">
+    <div  style="margin-top:1.6em; margin-bottom:1.6em"
+    class="1flex justify-between items-center">
       <% if user_signed_in? %>
         <%= link_to "Edit this art", edit_art_path(@art),
         class: "bg-green-700 mt-1 rounded-lg py-2 px-3

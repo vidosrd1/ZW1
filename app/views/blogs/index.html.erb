@@ -13,6 +13,7 @@
     text-white block font-medium" %>
     <% end %>
   </div>
+  <div style="margin-bottom:1.6em">
   <%= form_with(url: blogs_path, method: :get,
   data: {turbo_frame: "blogs", turbo_action: "advance"}) do |form| %>
       <%= form.label :query, "Search by tag name:",
@@ -31,9 +32,10 @@
   <% end %>
   <% if @pagy.count > @pagy.limit %>
     <div class="mt-10">
-      <%== pagy_nav(@pagy) %>
+      <%== @pagy.series_nav %>
     </div>
   <% end %>
+  </div>
   <div id="blogs" class="min-w-full">
     <table>
       <thead>
@@ -90,7 +92,7 @@
   </div>
   <% if @pagy.count > @pagy.limit %>
     <div class="mt-10">
-      <%== pagy_nav(@pagy) %>
+      <%== @pagy.series_nav %>
     </div>
   <% end %>
   <br>

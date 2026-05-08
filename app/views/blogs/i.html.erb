@@ -1,3 +1,4 @@
+<%== pagy_nav(@pagy) %>
 <% blog.novines.order('created_at DESC').each do |novine| %>
   <li class="vertical-menu">
   <a href="/novines/<%= novine.id %>",

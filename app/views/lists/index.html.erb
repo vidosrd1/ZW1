@@ -10,7 +10,7 @@
     class: "rounded-lg py-3 px-4 bg-blue-600
     text-white block font-medium" %>
   </div>
-  <br />
+  <div style="margin-bottom:1.6em">
   <%= form_with(url: lists_path, method: :get,
   data: {turbo_frame: "lists",
   turbo_action: "advance"}) do |form| %>
@@ -31,9 +31,10 @@
     <% end %>
   <% if @pagy.count > @pagy.limit %>
     <div class="mt-10">
-      <%== pagy_nav(@pagy) %>
+      <%== @pagy.series_nav %>
     </div>
   <% end %>
+  </div>
   <div id="lists" class="min-w-full">
     <% @lists.each do |list| %>
     <div class="row mt-4 clearfix">
@@ -58,13 +59,13 @@
         <%= truncate(strip_tags(list.body.to_s),
         length:200) %>
       </div>
-      <br />
+      <br>
     </div>
     <% end %>
   </div>
   <% if @pagy.count > @pagy.limit %>
   <div class="mt-10">
-    <%== pagy_nav(@pagy) %>
+    <%== @pagy.series_nav %>
   </div>
   <br>
   <% end %>

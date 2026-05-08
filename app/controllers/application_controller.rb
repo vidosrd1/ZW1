@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
   allow_browser versions: :modern
-  include Pagy::Backend
+  include Pagy::Method
+  #include Pagy::Backend
 end

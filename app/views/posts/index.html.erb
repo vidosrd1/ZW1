@@ -9,12 +9,12 @@
     <h1 class="font-bold text-4xl">Posts</h1>
     <%= link_to "New post", new_post_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
-  <br>
-  <div data-controller="dark-mode">
+  <div  style="margin-bottom:1.6em"
+  data-controller="dark-mode">
     <%= image_tag("_create-a.svg",
     data: { action: 'click->dark-mode#toggle'}) %>
   </div>
-  <br>
+  <div style="margin-bottom:1.6em">
   <%= form_with(url: posts_path, method: :get,
   data: {turbo_frame: "posts", turbo_action: "advance"}) do |form| %>
     <%= form.label :query, "Search by post name:",
@@ -48,7 +48,7 @@
         </h5>
         <%= truncate(strip_tags(post.body.to_s), length:180) %>
       </div>
-      <br />
+      <br>
       <div class="col-4 col-sm-4 col-md-3 col-lg-3 clearfix">
         <% if post.image.attached? %>
           <%= link_to image_tag(post.image,

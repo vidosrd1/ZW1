@@ -12,6 +12,7 @@
     text-white block font-medium" %>
     <% end %>
   </div>
+  <div style="margin-bottom:1.6em">
   <%= form_with(url: arts_path, method: :get,
   data: {turbo_frame: "arts", turbo_action: "advance"}) do |form| %>
     <%= form.label :query, "Search by art name:",
@@ -29,9 +30,10 @@
   text-gray-900 hover:text-gray-100 focus:ring-orange-100" %>
     </div>
   <% end %>
+  </div>
   <% if @pagy.count > @pagy.limit %>
   <div class="mt-10">
-    <%== pagy_nav(@pagy) %>
+    <%== @pagy.series_nav %>
   </div>
   <% end %>
   <div id="arts" class="min-w-full">
@@ -90,7 +92,7 @@
   </div>
   <% if @pagy.count > @pagy.limit %>
   <div class="mt-10">
-    <%== pagy_nav(@pagy) %>
+    <%== @pagy.series_nav %>
   </div>
   <% end %>
   <br>
