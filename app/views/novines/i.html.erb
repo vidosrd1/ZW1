@@ -1,3 +1,17 @@
+<%= link_to image_tag(@novines.first.image,
+style:"width:560px; heigh:auto; nav-link; nav-right;"),
+@novines.first.image %>
+<a href="/novines/<%= @novine.id %>",
+  class="nav-link">
+</a>
+<%= link_to image_tag(novine.image),
+novine.image %>
+<img src="<%= novins.image %>" alt="">
+<a href="/novins/<%= novine.id %>", class="nav-link"><%= link_to image_tag(@articles.image,
+  novins.image %></a>
+<%= link_to(image_tag(novins.image, alt: 'Image Description'),
+  root_path) %>
+
 <%= link_to image_tag(novine.image,
 border: 0),
 {action: 'novine',
