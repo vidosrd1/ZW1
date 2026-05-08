@@ -48808,3 +48808,23 @@ Started GET "/trix.css" for ::1 at 2026-05-08 21:40:16 +0200
   
 ActionController::RoutingError (No route matches [GET] "/trix.css"):
   
+[rails_node_module_linker] Middleware inserted
+Started GET "/madmin/" for ::1 at 2026-05-08 22:57:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by Madmin::DashboardController#show as HTML
+  Rendering layout layouts/madmin/application.html.erb
+  Rendering madmin/dashboard/show.html.erb within layouts/madmin/application
+  Rendered madmin/dashboard/show.html.erb within layouts/madmin/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered madmin/application/_javascript.html.erb (Duration: 19.5ms | GC: 1.2ms)
+  Rendered madmin/application/_flash.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mBloggable Pluck (24.8ms)[0m  [1m[34mSELECT "bloggables"."novine_id" FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='show',application='M',controller='dashboard'*/[0m
+  ↳ app/models/bloggable.rb:5:in '<class:Bloggable>'
+  [1m[36mBloggable Load (0.3ms)[0m  [1m[34mSELECT "bloggables".* FROM "bloggables" WHERE "bloggables"."blog_id" IS NULL /*action='show',application='M',controller='dashboard'*/[0m
+  ↳ app/models/bloggable.rb:6:in 'Enumerable#map'
+  [1m[36mNovine Pluck (31.1ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='show',application='M',controller='dashboard'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  Rendered madmin/application/_navigation.html.erb (Duration: 604.1ms | GC: 0.0ms)
+  Rendered layout layouts/madmin/application.html.erb (Duration: 632.4ms | GC: 1.5ms)
+Completed 200 OK in 650ms (Views: 201.5ms | ActiveRecord: 434.9ms (3 queries, 0 cached) | GC: 2.0ms)
+
+
