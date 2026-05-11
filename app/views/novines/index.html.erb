@@ -16,9 +16,12 @@
     class="nav-link"><%= @novines.first.title %></a>
   </h5>
   <% if @novines.first.image.attached? %>
-    <%= link_to image_tag(@novines.first.image,
-    style:"width:560px; heigh:auto; nav-link; nav-right;"),
-    @novines.first.image %>
+  <a href="/novines/<%= @novines.first.id %>",
+   class="nav-link">
+    <%= image_tag(@novines.first.image,
+    style:"margin-bottom:2em; width:560px; heigh:auto;
+    nav-link; nav-right;") %>
+  </a>
   <% end %>
   <div style="margin-top:1.6em; margin-bottom:1.2em">
   <%= form_with(url: novines_path, method: :get,
