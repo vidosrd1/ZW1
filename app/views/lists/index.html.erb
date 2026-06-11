@@ -38,7 +38,8 @@
   <div id="lists" class="min-w-full">
     <% @lists.each do |list| %>
     <div class="row mt-4 clearfix">
-      <h6 class="dark:text-slate-400 font-bold text-1xl mt-0 mb-1">
+      <h6 style="1margin-top:1.5em; margin-bottom:1em" 
+      class="dark:text-slate-400 font-bold text-1xl mt-0 mb-1">
         <a href="/lists/<%= list.id %>",
         class="nav-link"><%= list.title %></a>
       </h6>
@@ -49,9 +50,9 @@
           <%= image_tag(list.image) %>
         </a>
         <% end %>
-        <br />
       </div>
-      <div class="col-8 col-sm-8 col-md-9 col-lg-9">
+      <div style="margin-top:1.5em; margin-bottom:2em"
+      class="col-8 col-sm-8 col-md-9 col-lg-9">
         <a href="/lists/<%= list.id %>",
         class="text-1 text-orange-500 nav-link"><%= list.name %></a>
       <strong class="dark:text-slate-400 block font-medium mt-0 mb-1">

@@ -23,7 +23,7 @@
         1block inline-block font-medium text-white" %>
       </div>
     </div>
-    <br />
+    <br>
     <h3 class="block 1font-medium mb-1 text-3xl">
       <%= @novine.title %></h3>
     <h5 class="dark:text-slate-400 block font-medium mb-1 text-1xl">
@@ -44,7 +44,6 @@
         <small><%= @novine.publish %></small>
       </time>
     </h6>
-    <br>
     <div id="navbar" class="1collapse">
       <ul class="nav navbar-nav">
         <li style="width:650px; heigh:auto" class="">
@@ -86,8 +85,8 @@
         </li>
       </ul>
     </div>
-    <br />
-    <div class="1flex justify-between items-center">
+    <div style="margin-top:2em"
+    class="1flex justify-between items-center">
       <% if user_signed_in? %>
         <%= link_to "Edit this novine", edit_novine_path(@novine),
         class: "bg-green-700 mt-1 rounded-lg py-2 px-3
@@ -107,6 +106,5 @@
         1block inline-block font-medium text-white" %>
       </div>
     </div>
-    <br />
   </div>
 </div>
