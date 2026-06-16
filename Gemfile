@@ -38,7 +38,7 @@ gem 'name_of_person'#, '~> 1.1', '>= 1.1.3'
 gem 'paper_trail'#, '~> 16.0'
 gem 'standardrb'#, '~> 1.0', '>= 1.0.1'
 gem 'web-console', group: :development
-gem 'tailwindcss-rails', '~> 4.4'
+gem 'tailwindcss-rails', '~> 4.5'
 
 gem 'standard'#, '~> 1.53'
 gem 'pry'#, '~> 0.16.0'
