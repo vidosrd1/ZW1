@@ -61187,3 +61187,516 @@ Started GET "/trix.css" for ::1 at 2026-05-28 12:41:03 +0200
   
 ActionController::RoutingError (No route matches [GET] "/trix.css"):
   
+[rails_node_module_linker] Middleware inserted
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-06-29 23:08:47 +0200
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='M'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 10 pending migrations:
+
+db/migrate/20241103104118_create_active_storage_tables.active_storage.rb
+db/migrate/20241103104119_create_action_text_tables.action_text.rb
+db/migrate/20241103104214_create_lists.rb
+db/migrate/20241103104247_create_arts.rb
+db/migrate/20241103104313_add_art_id_to_lists.rb
+db/migrate/20241103110605_devise_create_users.rb
+db/migrate/20241109004254_create_novines.rb
+db/migrate/20241109004814_create_blogs.rb
+db/migrate/20241109004946_create_bloggables.rb
+db/migrate/20241109120926_create_posts.rb
+
+
+):
+  
+activerecord (8.1.3) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.3) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.3) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.3) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.3) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.3.0) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.3.0) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.3.0) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+request_store (1.7.0) lib/request_store/middleware.rb:19:in 'RequestStore::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+propshaft (1.3.2) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rails_node_module_linker (0.2.1) lib/rails_node_module_linker/middleware.rb:41:in 'RailsNodeModuleLinker::Middleware#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+[rails_node_module_linker] Middleware inserted
+  [1m[36mActiveRecord::InternalMetadata Load (6.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='M'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-06-29 21:09:34.373750', '2026-06-29 21:09:34.373755') RETURNING "key" /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Migrating to CreateActiveStorageTables (20241103104118)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar, "created_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key") /*application='M'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+) /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id") /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id") /*application='M'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+) /*application='M'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest") /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241103104118') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreateActionTextTables (20241103104119)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "body" text, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name") /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241103104119') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreateLists (20241103104214)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "lists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241103104214') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreateArts (20241103104247)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "arts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241103104247') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to AddArtIdToLists (20241103104313)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "lists" ADD "art_id" integer /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241103104313') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to DeviseCreateUsers (20241103110605)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email") /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token") /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241103110605') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreateNovines (20241109004254)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "novines" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "title" varchar, "name" varchar, "publish" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_11b91528c5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+) /*application='M'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_novines_on_user_id" ON "novines" ("user_id") /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241109004254') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreateBlogs (20241109004814)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241109004814') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreateBloggables (20241109004946)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "bloggables" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "novine_id" integer NOT NULL, "blog_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c38189692f"
+FOREIGN KEY ("novine_id")
+  REFERENCES "novines" ("id")
+, CONSTRAINT "fk_rails_bd5d8f5098"
+FOREIGN KEY ("blog_id")
+  REFERENCES "blogs" ("id")
+) /*application='M'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_bloggables_on_novine_id" ON "bloggables" ("novine_id") /*application='M'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_bloggables_on_blog_id" ON "bloggables" ("blog_id") /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241109004946') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+Migrating to CreatePosts (20241109120926)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='M'*/[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241109120926') RETURNING "version" /*application='M'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='M'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+[rails_node_module_linker] Middleware inserted
+Started GET "/" for ::1 at 2026-06-29 23:09:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='M'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 134.1ms | GC: 58.2ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 264.8ms | GC: 94.0ms)
+Completed 200 OK in 399ms (Views: 276.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 94.0ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-06-29 23:09:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/arts" for ::1 at 2026-06-29 23:09:56 +0200
+Processing by ArtsController#index as HTML
+  [1m[36mArt Count (7.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "arts" /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/controllers/arts_controller.rb:6:in 'ArtsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering arts/index.html.erb within layouts/application
+  [1m[36mArt Load (0.5ms)[0m  [1m[34mSELECT "arts".* FROM "arts" ORDER BY created_at DESC LIMIT 7 OFFSET 0 /*action='index',application='M',controller='arts'*/[0m
+  ↳ app/views/arts/index.html.erb:54
+  Rendered arts/index.html.erb within layouts/application (Duration: 53.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 73.2ms | GC: 1.0ms)
+Completed 200 OK in 231ms (Views: 91.4ms | ActiveRecord: 11.4ms (2 queries, 0 cached) | GC: 3.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2026-06-29 23:10:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.6ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 70.6ms | GC: 2.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 80.1ms | GC: 2.0ms)
+Completed 200 OK in 160ms (Views: 90.6ms | ActiveRecord: 3.1ms (0 queries, 0 cached) | GC: 3.7ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2026-06-29 23:10:00 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.0ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | GC: 0.4ms)
+Completed 200 OK in 38ms (Views: 28.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2026-06-29 23:10:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.4ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | GC: 0.3ms)
+Completed 200 OK in 68ms (Views: 43.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2026-06-29 23:10:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.1ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 37.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2026-06-29 23:10:03 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 9.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 39.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2026-06-29 23:10:03 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.8ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 9.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2026-06-29 23:10:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 16.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2026-06-29 23:10:11 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.0ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 23.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2026-06-29 23:10:13 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 16.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 34.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2026-06-29 23:10:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | GC: 0.0ms)
+Completed 200 OK in 47ms (Views: 23.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-06-29 23:10:25 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+Completed 401 Unauthorized in 92ms (ActiveRecord: 4.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | GC: 0.0ms)
+Completed 200 OK in 642ms (Views: 19.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2026-06-29 23:10:35 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='M',controller='sessions'*/[0m
+Completed 401 Unauthorized in 31ms (ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 2.9ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "remember_me" => "0"}, "commit" => "Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | GC: 0.0ms)
+Completed 200 OK in 604ms (Views: 32.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2026-06-29 23:10:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.9ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 8.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2026-06-29 23:11:03 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "password_confirmation" => "[FILTERED]"}, "commit" => "Sign up"}
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='M',controller='registrations'*/[0m
+  [1m[36mUser Exists? (13.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'vidosrd@gmail.com' LIMIT 1 /*action='create',application='M',controller='registrations'*/[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ('vidosrd@gmail.com', '$2a$12$ru8gOQXLEWWbfja1Gcx2tuGTUe02gyRl/EZ4AStSlvth2hUFKnlo2', NULL, NULL, NULL, '2026-06-29 21:11:04.311801', '2026-06-29 21:11:04.311801') RETURNING "id" /*action='create',application='M',controller='registrations'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='M',controller='registrations'*/[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 763ms (ActiveRecord: 19.2ms (2 queries, 0 cached) | GC: 27.4ms)
+
+
+Started GET "/" for ::1 at 2026-06-29 23:11:04 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | GC: 1.0ms)
+Completed 200 OK in 28ms (Views: 16.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/blogs" for ::1 at 2026-06-29 23:11:06 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/controllers/blogs_controller.rb:7:in 'BlogsController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:11
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" LIMIT 7 OFFSET 0 /*action='index',application='M',controller='blogs'*/[0m
+  ↳ app/views/blogs/index.html.erb:54
+  Rendered blogs/index.html.erb within layouts/application (Duration: 28.5ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | GC: 1.0ms)
+Completed 200 OK in 135ms (Views: 63.3ms | ActiveRecord: 1.3ms (3 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/novines" for ::1 at 2026-06-29 23:11:08 +0200
+Processing by NovinesController#index as HTML
+  [1m[36mNovine Pluck (8.3ms)[0m  [1m[34mSELECT "novines".* FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/models/novine.rb:2:in '<class:Novine>'
+  [1m[36mNovine Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:12:in 'NovinesController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/index.html.erb within layouts/application
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 1 OFFSET 0 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:16
+  Rendered novines/index.html.erb within layouts/application (Duration: 21.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 12.1ms (3 queries, 0 cached) | GC: 1.5ms)
+
+
+  
+NameError (uninitialized constant Pagy::OverflowError)
+Caused by: ActionView::Template::Error (undefined method 'id' for nil)
+Caused by: NoMethodError (undefined method 'id' for nil)
+
+Information for: NameError (uninitialized constant Pagy::OverflowError):
+  
+app/controllers/novines_controller.rb:22:in 'NovinesController#index'
+
+Information for cause: ActionView::Template::Error (undefined method 'id' for nil):
+    13:   </div>
+    14:   <h5 style="margin-top:1.2em; margin-bottom:1.2em">
+    15:     <a href="/novines/<%= @novines.first.id %>",
+    16:     class="nav-link"><%= @novines.first.title %></a>
+    17:   </h5>
+    18:   <% if @novines.first.image.attached? %>
+    19:   <a href="/novines/<%= @novines.first.id %>",
+  
+app/views/novines/index.html.erb:16
+app/controllers/novines_controller.rb:20:in 'NovinesController#index'
+
+Information for cause: NoMethodError (undefined method 'id' for nil):
+  
+app/views/novines/index.html.erb:16
+app/controllers/novines_controller.rb:20:in 'NovinesController#index'
+Started GET "/" for ::1 at 2026-06-29 23:14:29 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 83.7ms | GC: 0.9ms)
+Completed 200 OK in 99ms (Views: 75.8ms | ActiveRecord: 10.5ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/trix.css" for ::1 at 2026-06-29 23:14:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/trix.css"):
+  
+Started GET "/home/index" for ::1 at 2026-06-29 23:14:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_dark_mode_check.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='M',controller='home'*/[0m
+  ↳ app/views/layouts/application.html.erb:70
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | GC: 1.3ms)
+Completed 200 OK in 60ms (Views: 45.7ms | ActiveRecord: 9.2ms (1 query, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/novines" for ::1 at 2026-06-29 23:14:36 +0200
+Processing by NovinesController#index as HTML
+  [1m[36mNovine Count (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "novines" /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/controllers/novines_controller.rb:12:in 'NovinesController#index'
+  Rendering layout layouts/application.html.erb
+  Rendering novines/index.html.erb within layouts/application
+  [1m[36mNovine Load (0.2ms)[0m  [1m[34mSELECT "novines".* FROM "novines" ORDER BY created_at DESC LIMIT 1 OFFSET 0 /*action='index',application='M',controller='novines'*/[0m
+  ↳ app/views/novines/index.html.erb:16
+  Rendered novines/index.html.erb within layouts/application (Duration: 10.1ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | GC: 1.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.0ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+  
+NameError (uninitialized constant Pagy::OverflowError)
+Caused by: ActionView::Template::Error (undefined method 'id' for nil)
+Caused by: NoMethodError (undefined method 'id' for nil)
+
+Information for: NameError (uninitialized constant Pagy::OverflowError):
+  
+app/controllers/novines_controller.rb:22:in 'NovinesController#index'
+
+Information for cause: ActionView::Template::Error (undefined method 'id' for nil):
+    13:   </div>
+    14:   <h5 style="margin-top:1.2em; margin-bottom:1.2em">
+    15:     <a href="/novines/<%= @novines.first.id %>",
+    16:     class="nav-link"><%= @novines.first.title %></a>
+    17:   </h5>
+    18:   <% if @novines.first.image.attached? %>
+    19:   <a href="/novines/<%= @novines.first.id %>",
+  
+app/views/novines/index.html.erb:16
+app/controllers/novines_controller.rb:20:in 'NovinesController#index'
+
+Information for cause: NoMethodError (undefined method 'id' for nil):
+  
+app/views/novines/index.html.erb:16
+app/controllers/novines_controller.rb:20:in 'NovinesController#index'

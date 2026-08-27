@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_10_13_133712) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "pg_catalog.plpgsql"
-
+ActiveRecord::Schema[8.1].define(version: 2024_11_09_120926) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -55,14 +52,13 @@ ActiveRecord::Schema[8.1].define(version: 2025_10_13_133712) do
   create_table "arts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "name"
-    t.integer "superpower_id"
     t.datetime "updated_at", null: false
   end
 
   create_table "bloggables", force: :cascade do |t|
-    t.bigint "blog_id", null: false
+    t.integer "blog_id", null: false
     t.datetime "created_at", null: false
-    t.bigint "novine_id", null: false
+    t.integer "novine_id", null: false
     t.datetime "updated_at", null: false
     t.index ["blog_id"], name: "index_bloggables_on_blog_id"
     t.index ["novine_id"], name: "index_bloggables_on_novine_id"
@@ -71,32 +67,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_10_13_133712) do
   create_table "blogs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "name"
-    t.bigint "parent_id"
     t.datetime "updated_at", null: false
-    t.index ["parent_id"], name: "index_blogs_on_parent_id"
-  end
-
-  create_table "friendly_id_slugs", force: :cascade do |t|
-    t.datetime "created_at"
-    t.string "scope"
-    t.string "slug", null: false
-    t.integer "sluggable_id", null: false
-    t.string "sluggable_type", limit: 50
-    t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
-    t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
-    t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
-  end
-
-  create_table "kosts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.text "description"
-    t.boolean "pro"
-    t.string "slug"
-    t.string "thumbnail_url"
-    t.string "title"
-    t.datetime "updated_at", null: false
-    t.string "video_url"
-    t.index ["slug"], name: "index_kosts_on_slug", unique: true
   end
 
   create_table "lists", force: :cascade do |t|
@@ -111,10 +82,9 @@ ActiveRecord::Schema[8.1].define(version: 2025_10_13_133712) do
     t.datetime "created_at", null: false
     t.string "name"
     t.date "publish"
-    t.integer "superpower_id"
     t.string "title"
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
+    t.integer "user_id", null: false
     t.index ["user_id"], name: "index_novines_on_user_id"
   end
 
@@ -122,27 +92,6 @@ ActiveRecord::Schema[8.1].define(version: 2025_10_13_133712) do
     t.datetime "created_at", null: false
     t.string "name"
     t.string "title"
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.string "name"
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sessions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.string "ip_address"
-    t.datetime "updated_at", null: false
-    t.string "user_agent"
-    t.bigint "user_id", null: false
-    t.index ["user_id"], name: "index_sessions_on_user_id"
-  end
-
-  create_table "superpowers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.string "name"
     t.datetime "updated_at", null: false
   end
 
@@ -160,11 +109,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_10_13_133712) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "arts", "superpowers"
   add_foreign_key "bloggables", "blogs"
   add_foreign_key "bloggables", "novines"
-  add_foreign_key "blogs", "blogs", column: "parent_id"
-  add_foreign_key "novines", "superpowers"
   add_foreign_key "novines", "users"
-  add_foreign_key "sessions", "users"
 end
