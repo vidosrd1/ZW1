@@ -61700,3 +61700,5 @@ Information for cause: NoMethodError (undefined method 'id' for nil):
   
 app/views/novines/index.html.erb:16
 app/controllers/novines_controller.rb:20:in 'NovinesController#index'
+[rails_node_module_linker] Middleware inserted
+[rails_node_module_linker] Middleware inserted

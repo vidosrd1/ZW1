@@ -90,3 +90,4 @@ group :performance do
   gem 'kalibera'
   gem 'memory_profiler'
 end
+gem "ruby-vips", "~> 2.0"
